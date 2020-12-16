@@ -1,0 +1,29 @@
+{
+  "deployer_tfstate_key": "PROTO-NOEU-MGMT-INFRASTRUCTURE.terraform.tfstate",
+  "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953",
+  "infrastructure": {
+    "environment": "PROTO",
+    "region": "northeurope",
+    "resource_group": {
+      "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE"
+    },
+    "vnets": {
+      "sap": {
+        "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet",
+        "name": "SAPPROTO",
+        "subnet_iscsi": {
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetiscsi"
+        }
+      }
+    },
+    "iscsi": {
+      "iscsi_count": 3,
+      "iscsi_nic_ips": ["10.6.4.20", "10.6.4.21", "10.6.4.22"]
+    }
+  },
+  "options": {},
+  "sshkey": {
+    "path_to_private_key": "sshkey",
+    "path_to_public_key": "sshkey.pub"
+  }
+}

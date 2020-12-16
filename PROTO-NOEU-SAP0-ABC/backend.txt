@@ -1,0 +1,4 @@
+resource_group_name 	= "PROTO-NOEU-SAP_LIBRARY"
+storage_account_name 	= "protonoeutfstate953"
+container_name		    = "tfstate"
+key			            = "PROTO-NOEU-SAP0-ABC.terraform.tfstate"

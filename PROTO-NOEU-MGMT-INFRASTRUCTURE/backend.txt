@@ -1,0 +1,5 @@
+resource_group_name 	= "PROTO-NOEU-SAP_LIBRARY"
+storage_account_name 	= "protonoeutfstate953"
+container_name		= "tfstate"
+key			= "PROTO-NOEU-MGMT-INFRASTRUCTURE.terraform.tfstate"
+subscription_id= "8d8422a3-a9c1-4fe9-b880-adcf61557c71" 

@@ -1,0 +1,155 @@
+{
+  "deployer_tfstate_key": "PROTO-NOEU-MGMT-INFRASTRUCTURE.terraform.tfstate",
+  "landscape_tfstate_key": "PROTO-NOEU-LANDSCAPE.terraform.tfstate",
+  "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953",
+  "application": {
+    "application_server_count": 6,
+    "enable_deployment": true,
+    "ers_instance_number": "02",
+    "os": {
+      "publisher": "Oracle",
+      "offer": "Oracle-Linux",
+      "sku": "81",
+      "version": "latest"
+    },
+    "scs_os": {
+      "publisher": "suse",
+      "offer": "sles-sap-15-sp1",
+      "sku": "gen1",
+      "version": "latest"
+    },
+    "web_os": {
+      "publisher": "suse",
+      "offer": "sles-sap-15-sp1",
+      "sku": "gen1",
+      "version": "latest"
+    },
+    "scs_high_availability": false,
+    "scs_server_count": 3,
+    "scs_instance_number": "01",
+    "sid": "WOO",
+    "webdispatcher_count": 2,
+    "app_zones": ["1", "2", "3"],
+    "scs_zones": ["1", "2"],
+    "web_zones": ["1", "2terr"],
+    "dual_nics": true,
+    "use_DHCP" : true,
+    "app_tags": {
+      "hello": "app world"
+    },
+    "scs_tags": {
+      "hello": "scs world"
+    },
+    "web_tags": {
+      "hello": "web world"
+    },
+    "authentication": {
+      "type": "password",
+      "username": "azureadm"
+    }
+  },
+  "databases": [
+    {
+      "high_availability": true,
+      "os": {
+        "publisher": "Oracle",
+        "offer": "Oracle-Linux",
+        "sku": "81",
+        "version": "latest"
+      },
+      "platform": "Oracle",
+      "size": "Default",
+      "zones": ["1","2"],
+      "dual_nics": true,
+      "observer": {
+        "nic_ips": ["10.6.2.22", "10.6.2.25"],
+        "zones" : ["3"]
+      },
+      "dbnodes": [
+        {
+
+        }
+      ],
+      "avset_arm_ids": [],
+      "use_DHCP" : true,
+      "tags" :
+      {
+        
+      }
+    }
+  ],
+  "infrastructure": {
+    "landscape": {
+      "key_vault_arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
+      "sid_public_key_secret_name": "PROTO-NOEU-MGMT-sshkey-pub"
+    },
+    "ppg": {},
+    "environment": "PROTO",
+    "region": "northeurope",
+    "dynamic_addressing": true,
+    "anchor_vms": {
+      "sku": "Standard_D4s_v4",
+      "authentication": {
+        "type": "key",
+        "username": "azureadm"
+      },
+      "accelerated_networking": true,
+      "os": {
+        "publisher": "Oracle",
+        "offer": "Oracle-Linux",
+        "sku": "81",
+        "version": "latest"
+      },
+      "nic_ips": ["10.6.2.45", "10.6.2.46", "10.6.2.47"]
+    },
+
+    "resource_group": {
+      "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROT-WOO"
+    },
+    "vnets": {
+      "management": {
+        "saplib_resource_group_name": "PROTO-NOEU-SAP_LIBRARY",
+        "tfstate_storage_account_name": "protonoeutfstate953"
+      },
+      "sap": {
+        "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet",
+        "name": "SAPPROTO",
+        "subnet_admin": {
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetAdmin",
+          "nsg": {
+            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/PROTO-NOEU-SAPPROTO_adminSubnet-nsg"
+          }
+        },
+        "subnet_app": {
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetApp",
+          "nsg": {
+            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/PROTO-NOEU-SAPPROTO_appSubnet-nsg"
+          }
+        },
+        "subnet_db": {
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetDb",
+          "nsg": {
+            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/PROTO-NOEU-SAPPROTO_dbSubnet-nsg"
+          }
+        },
+        "subnet_iscsi": {
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetiscsi"
+        },
+        "subnet_web": {
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetWeb",
+          "nsg": {
+            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/PROTO-NOEU-SAPPROTO_webSubnet-nsg"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "resource_offset": 1,
+    "use_local_keyvault_for_secrets": true
+  },
+  "key_vault" : 
+  {
+    "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
+  }
+}
