@@ -39,13 +39,13 @@ locals {
   ]
 
   app_computer_names = [for idx in range(var.app_server_count) :
-    format("%sapp%02d%s%s", lower(var.sap_sid), idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)
+    format("a%s%s%sa%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
   ]
 
   app_server_vm_names = [for idx in range(var.app_server_count) :
     length(var.app_zones) > 0 ? (
-      format("%sapp%sz%s%s%02d%s%s", lower(var.sap_sid), local.separator, var.app_zones[idx % max(length(var.app_zones), 1)], local.separator, idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)) : (
-      format("%sapp%02d%s%s", lower(var.sap_sid), idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)
+      format("a%s%s%sa%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)) : (
+      format("a%s%s%sa%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
     )
   ]
 
@@ -54,46 +54,48 @@ locals {
   ]
 
   hana_computer_names = [for idx in range(var.db_server_count) :
-    format("%sd%s%02dl%d%s", lower(var.sap_sid), lower(var.db_sid), idx + var.resource_offset, 0, local.random_id_vm_verified)
+    format("a%s%s%sd%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
   ]
 
   hana_computer_names_ha = [for idx in range(var.db_server_count) :
-    format("%sd%s%02dl%d%s", lower(var.sap_sid), lower(var.db_sid), idx + var.resource_offset, 1, local.random_id_vm_verified)
+    format("a%s%s%sd%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
   ]
 
   hana_server_vm_names = [for idx in range(var.db_server_count) :
     length(var.db_zones) > 0 ? (
-      format("%sd%s%sz%s%s%02dl%d%s", lower(var.sap_sid), lower(var.db_sid), local.separator, var.db_zones[idx % max(length(var.db_zones), 1)], local.separator, idx + var.resource_offset, 0, local.random_id_vm_verified)) : (
-      format("%sd%s%02dl%d%s", lower(var.sap_sid), lower(var.db_sid), idx + var.resource_offset, 0, local.random_id_vm_verified)
+      // TODO Update to reflect zonal naming
+      format("a%s%s%sd%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)) : (
+      format("a%s%s%sd%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
     )
   ]
 
   hana_server_vm_names_ha = [for idx in range(var.db_server_count) :
     length(var.db_zones) > 0 ? (
-      format("%sd%s%sz%s%s%02dl%d%s", lower(var.sap_sid), lower(var.db_sid), local.separator, var.db_zones[idx % max(length(var.db_zones), 1)], local.separator, idx + var.resource_offset, 1, local.random_id_vm_verified)) : (
-      format("%sd%s%02dl%d%s", lower(var.sap_sid), lower(var.db_sid), idx + var.resource_offset, 1, local.random_id_vm_verified)
+      // TODO Update to reflect zonal naming
+      format("a%s%s%sd%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)) : (
+      format("a%s%s%sd%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
     )
   ]
 
   scs_computer_names = [for idx in range(var.scs_server_count) :
-    format("%sscs%02d%s%s", lower(var.sap_sid), idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)
+    format("a%s%s%sc%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
   ]
 
   scs_server_vm_names = [for idx in range(var.scs_server_count) :
     length(var.scs_zones) > 0 ? (
-      format("%sscs%sz%s%s%02d%s%s", lower(var.sap_sid), local.separator, var.scs_zones[idx % max(length(var.scs_zones), 1)], local.separator, idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)) : (
-      format("%sscs%02d%s%s", lower(var.sap_sid), idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)
+      format("a%s%s%sc%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)) : (
+      format("a%s%s%sc%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
     )
   ]
 
   web_computer_names = [for idx in range(var.web_server_count) :
-    format("%sweb%02d%s%s", lower(var.sap_sid), idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)
+    format("a%s%s%sw%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
   ]
 
   web_server_vm_names = [for idx in range(var.web_server_count) :
     length(var.web_zones) > 0 ? (
-      format("%sweb%sz%s%s%02d%s%s", lower(var.sap_sid), local.separator, var.web_zones[idx % max(length(var.web_zones), 1)], local.separator, idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)) : (
-      format("%sweb%02d%s%s", lower(var.sap_sid), idx + var.resource_offset, local.app_oscode, local.random_id_vm_verified)
+      format("a%s%s%sw%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)) : (
+      format("a%s%s%sw%03d", local.db_oscode, lower(local.env_verified), var.codename, idx + var.resource_offset)
     )
   ]
 
