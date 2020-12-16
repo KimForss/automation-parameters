@@ -45,7 +45,7 @@
         "version": "latest"
       },
       "platform": "HANA",
-      "size": "ABC",
+      "size": "Demo",
       "dual_nics": false,
       "use_DHCP" : true,
       "dbnodes": [

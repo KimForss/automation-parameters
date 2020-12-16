@@ -1,5 +1,5 @@
 {
-  "ABC": {
+  "Demo": {
     "compute": {
       "vm_size": "Standard_D4s_v3",
       "swap_size_gb": 2

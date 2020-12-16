@@ -1,0 +1,16 @@
+{
+    "infrastructure": {
+      "region": "westus2",
+      "environment": "S",
+      "vnets": {
+        "management": {
+          "name": "MGMT",
+          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2",
+          "subnet_mgmt": {
+            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2"
+          }
+        }
+      }
+    }
+  }
+  
