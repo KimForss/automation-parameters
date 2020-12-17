@@ -55,7 +55,7 @@
     "ppg": {},
     "environment": "S",
     "codename" : "ec",
-    "region": "WESTUS2",
+    "region": "westus2",
     "vnets": {
       "sap": {
         "subnet_admin": {
