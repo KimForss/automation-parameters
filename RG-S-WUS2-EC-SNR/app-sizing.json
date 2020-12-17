@@ -46,7 +46,7 @@
   "scs": {
     "Default": {
       "compute": {
-        "vm_size": "Standard_E8ds v4",
+        "vm_size": "Standard_D8s_v3",
         "accelerated_networking": false
       },
       "storage": [{
