@@ -21,7 +21,7 @@
     "authentication": {
       "type": "password",
       "username": "azureadm"
-    },
+    }
 
   },
   "databases": [
@@ -45,7 +45,7 @@
       "authentication": {
         "type": "key",
         "username": "cloudAdmin"
-      },
+      }
 
     }
   ],
