@@ -43,7 +43,7 @@
       "avset_arm_ids": [],
       "use_DHCP" : true,
       "authentication": {
-        "type": "key",
+        "type": "password",
         "username": "cloudAdmin"
       }
 
@@ -52,7 +52,7 @@
   "infrastructure": {
     "ppg": {},
     "environment": "S",
-    "codename" : "ec",
+    "codename" : "cr",
     "region": "westus2",
     "vnets": {
       "sap": {

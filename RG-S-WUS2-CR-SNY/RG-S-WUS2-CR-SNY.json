@@ -15,7 +15,7 @@
     "scs_high_availability": false,
     "scs_server_count": 1,
     "scs_instance_number": "01",
-    "sid": "SNR",
+    "sid": "SNY",
     "webdispatcher_count": 0,
     "use_DHCP" : true,
     "authentication": {
@@ -54,7 +54,7 @@
   "infrastructure": {
     "ppg": {},
     "environment": "S",
-    "codename" : "ec",
+    "codename" : "cr",
     "region": "westus2",
     "vnets": {
       "sap": {
