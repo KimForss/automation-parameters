@@ -52,7 +52,7 @@
   "infrastructure": {
     "ppg": {},
     "environment": "S",
-    "codename" : "ec",
+    "codename" : "cr",
     "region": "westus2",
     "vnets": {
       "sap": {
