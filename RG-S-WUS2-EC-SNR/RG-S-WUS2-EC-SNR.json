@@ -22,7 +22,7 @@
       "type": "password",
       "username": "azureadm"
     },
-    "scs_zones" : [""]
+    "scs_zones" : ["1"]
 
   },
   "databases": [
@@ -47,7 +47,7 @@
         "type": "password",
         "username": "azureadm"
       },
-      "zones" : [""]
+      "zones" : ["1"]
 
     }
   ],
