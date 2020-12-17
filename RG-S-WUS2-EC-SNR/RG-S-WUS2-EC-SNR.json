@@ -21,7 +21,9 @@
     "authentication": {
       "type": "password",
       "username": "azureadm"
-    }
+    },
+    "scs_zones" : [""]
+
   },
   "databases": [
     {
@@ -44,7 +46,9 @@
       "authentication": {
         "type": "password",
         "username": "azureadm"
-      }
+      },
+      "zones" : [""]
+
     }
   ],
   "infrastructure": {
