@@ -64,7 +64,7 @@
       "use_DHCP": true,
       "authentication": {
         "type": "password",
-        "username": "cloudAdmin"
+        "username": "azureadm"
       }
     }
   ],
