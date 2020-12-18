@@ -1,7 +1,11 @@
 {
   "infrastructure": {
     "region": "westus2",
-    "environment": "S"
+    "environment": "S",
+    "resource_group": {
+      "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2"
+    }
+
   },
   "deployer": {
     "environment": "S",
@@ -9,7 +13,7 @@
     "vnet": "VNETSA"
   },
   "key_vault": {
-    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2userA81",
-    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2prvtA81"
+    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/SWUS2userA81",
+    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/SWUS2prvtA81"
   }
 }
