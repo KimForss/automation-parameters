@@ -1,7 +1,7 @@
 {
   "deployer_tfstate_key": "RG-S-WUS2-INFRASTRUCTURE.terraform.tfstate",
   "landscape_tfstate_key": "RG-S-WUS2-SAP_LANDSCAPE.terraform.tfstate",
-  "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/RG-S-WUS2-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/swus2tfstate1f9",
+  "tfstate_resource_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/swus2tfstate1f9",
   "application": {
     "application_server_count": 0,
     "enable_deployment": false,
@@ -59,21 +59,21 @@
     "vnets": {
       "sap": {
         "subnet_admin": {
-          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",          
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",          
           "nsg": {
-            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
+            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
           }
         },
         "subnet_app": {
-          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",          
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",          
           "nsg": {
-            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
+            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
           }          
         },
         "subnet_db": {
-          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",          
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",          
           "nsg": {
-            "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
+            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
           }          
         }
       }
@@ -85,8 +85,8 @@
   },
   "key_vault" : 
   {
-    "kv_user_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2userA81",
-    "kv_prvt_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2prvtA81",
+    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2userA81",
+    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2prvtA81",
     "kv_sid_sshkey_prvt" : "RG-S-WUS2-sshkey",
     "kv_sid_sshkey_pub" : "RG-S-WUS2-sshkey-pub"
   }
