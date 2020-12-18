@@ -1,7 +1,7 @@
 {
   "infrastructure": {
     "region": "westus2",
-    "environment": "Sandbox",
+    "environment": "S",
     "resource_group": {
       "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2"
     },
