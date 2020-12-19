@@ -25,5 +25,9 @@
   "sshkey": {
     "path_to_private_key": "sshkey",
     "path_to_public_key": "sshkey.pub"
+  },
+  "credentials" :
+  {
+    "username" : "azureadm"
   }
 }
