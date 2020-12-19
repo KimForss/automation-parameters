@@ -24,6 +24,6 @@
   },
   "credentials" :
   {
-    "username" : "azureadm"
+    "username" : "cloudAdmin"
   }
 }

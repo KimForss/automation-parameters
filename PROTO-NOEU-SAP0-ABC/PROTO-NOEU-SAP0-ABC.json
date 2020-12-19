@@ -1,7 +1,4 @@
 {
-  "deployer_tfstate_key": "PROTO-NOEU-MGMT-INFRASTRUCTURE.terraform.tfstate",
-  "landscape_tfstate_key" : "PROTO-NOEU-LANDSCAPE.terraform.tfstate",
-  "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953",
   "application": {
     "application_server_count": 3,
     "enable_deployment": true,
@@ -18,10 +15,6 @@
     "sid": "ABC",
     "webdispatcher_count": 0,
     "dual_nics": false,
-    "authentication": {
-      "type": "key",
-      "username": "azureadm"
-    },
     "use_DHCP" : true,
     "app_tags" : {
       "hello": "app world"
@@ -31,6 +24,9 @@
     },
     "web_tags" : {
       "hello": "web world"
+    },
+    "authentication": {
+      "type": "password"
     }
 
 
@@ -48,7 +44,10 @@
       "size": "Demo",
       "dual_nics": false,
       "use_DHCP" : true,
-      "dbnodes": [
+      "authentication": {
+        "type": "password"
+      },
+     "dbnodes": [
         {
         },
         {
@@ -58,10 +57,6 @@
     }
   ],
   "infrastructure": {
-    "landscape": {
-      "key_vault_arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
-      "sid_public_key_secret_name": "PROTO-NOEU-MGMT-sshkey-pub"
-    },
     "environment": "PROTO",
     "region": "northeurope",
     "resource_group": {
@@ -70,11 +65,6 @@
     "disk_encryption_set_id" : "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.Compute/diskEncryptionSets/PROTO-NOEU-KEY_SET",
     "vnets": {
       "management": {
-        "enable_peering": false,
-        "deployer_tfstate_key": "PROTO-NOEU-MGMT-INFRASTRUCTURE.terraform.tfstate",
-        "saplib_resource_group_name": "PROTO-NOEU-SAP_LIBRARY",
-        "tfstate_storage_account_name": "protonoeutfstate953",
-        "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953"
       },
       "sap": {
         "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet",
@@ -96,9 +86,6 @@
             "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/PROTO-NOEU-SAPPROTO_dbSubnet-nsg"
           }
         },
-        "subnet_iscsi": {
-          "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetiscsi"
-        },
         "subnet_web": {
           "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetWeb",
           "nsg": {
@@ -117,5 +104,9 @@
   {
     "kv_user_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
     "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
+  },
+  "credentials" :
+  {
+    "username" : "ABCAdmin"
   }
 }
