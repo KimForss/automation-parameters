@@ -10,10 +10,11 @@ locals {
   library_name   = upper(format("RG-%s-%s", local.library_env_verified, local.location_short))
 
   // Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. The name must be unique.
-  deployer_storageaccount_name       = substr(replace(lower(format("%s%s%sdiag%s", local.deployer_env_verified, local.deployer_location_short, local.dep_vnet_verified, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
-  landscape_storageaccount_name      = substr(replace(lower(format("%s%s%sdiag%s", local.landscape_env_verified, local.location_short, local.sap_vnet_verified, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
-  library_storageaccount_name        = substr(replace(lower(format("%s%ssaplib%s", local.library_env_verified, local.location_short, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
-  sdu_storageaccount_name            = substr(replace(lower(format("%s%s%sdiag%s", local.env_verified, local.location_short, local.sap_vnet_verified, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
-  terraformstate_storageaccount_name = substr(replace(lower(format("%s%stfstate%s", local.library_env_verified, local.location_short, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
+
+  deployer_storageaccount_name       = substr(replace(lower(format("stg%s%s%sdepdiag%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
+  landscape_storageaccount_name      = substr(replace(lower(format("stg%s%s%sdiag%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
+  library_storageaccount_name        = substr(replace(lower(format("stg%s%s%slib%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
+  sdu_storageaccount_name            = substr(replace(lower(format("stg%s%s%sdiag%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
+  terraformstate_storageaccount_name = substr(replace(lower(format("stg%s%s%stfstate%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
 
 }

@@ -7,16 +7,22 @@
     "vnets": {
       "sap": {
         "subnet_admin": {
-          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2",
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2_Db_01",
           "nsg": {
-            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/RG-S-WUS2_deployment-nsg"
+            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/nsg_sandbaox_s4hana_westus2"
           }
         },
         "subnet_app": {
-          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2_App_01"
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2_App_01",
+          "nsg": {
+            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/nsg_sandbaox_s4hana_westus2"
+          }
         },
         "subnet_db": {
-          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2_Db_01"
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2_Db_01",
+          "nsg": {
+            "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/nsg_sandbaox_s4hana_westus2"
+          }
         }
       }
     }
@@ -67,9 +73,7 @@
     "use_local_keyvault_for_secrets": false
   },
   "key_vault": {
-    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/SWUS2userA81",
-    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/SWUS2prvtA81",
-    "kv_sid_sshkey_prvt": "RG-S-WUS2-sshkey",
-    "kv_sid_sshkey_pub": "RG-S-WUS2-sshkey-pub"
+    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/kv-prem-sandbox-s4hana-westure-01",
+    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/kv-prem-sandbox-s4hana-westure-02"
   }
 }

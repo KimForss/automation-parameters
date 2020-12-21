@@ -299,6 +299,33 @@ variable deployer_location {
   default     = ""
 }
 
+variable "env_mapping" {
+  description = "mapping Environment names"
+  default = {
+    "d" = "dev",
+    "t" = "tst",
+    "q" = "qa",
+    "p" = "prd", 
+    "l" ="prf",
+    "s" = "sbx"
+
+  }
+}
+
+variable "env_mapping_fullname" {
+  description = "mapping Environment names"
+  default = {
+    "d" = "development",
+    "t" = "tst",
+    "q" = "qa",
+    "p" = "prd", 
+    "l" ="prf",
+    "s" = "sandbox"
+
+  }
+}
+
+
 
 locals {
 
@@ -331,6 +358,9 @@ locals {
 
   //The separator to use between the prefix and resource name
   separator = "_"
+
+  env_three_letter = var.env_mapping[var.environment]
+  env_fullname = var.env_mapping_fullname[var.environment]
 
 }
 

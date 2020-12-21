@@ -12,8 +12,12 @@
     }
   },
   "key_vault": {
-    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2userA81",
-    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/RG-S-WUS2-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/SWUS2prvtA81"
+    "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/kv-prem-sandbox-s4hana-westure-01",
+    "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/kv-prem-sandbox-s4hana-westure-02"
+  },
+  "credentials": {
+    "username" : "conaadmin",
+    "password" : ""
   }
 
 }
