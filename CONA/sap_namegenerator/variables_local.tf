@@ -224,13 +224,13 @@ variable resource_suffixes {
     "deployer_rg"         = "-INFRASTRUCTURE"
     "deployer_state"      = "_DEPLOYER.terraform.tfstate"
     "deployer_subnet"     = "_deployment-subnet"
-    "deployer_subnet_nsg" = "_deployment-nsg"
+    "deployer_subnet_nsg" = "deployment-nsg"
     "iscsi_subnet"        = "iscsi-subnet"
     "iscsi_subnet_nsg"    = "iscsiSubnet-nsg"
     "library_rg"          = "-SAP_LIBRARY"
     "library_state"       = "_SAP-LIBRARY.terraform.tfstate"
     "kv"                  = ""
-    "msi"                 = "-msi"
+    "msi"                 = "deployer-msi"
     "nic"                 = "-nic"
     "osdisk"              = "-OsDisk"
     "pip"                 = "-pip"
@@ -357,7 +357,7 @@ locals {
   zonal_deployment = try(length(local.zones), 0) > 0 ? true : false
 
   //The separator to use between the prefix and resource name
-  separator = "_"
+  separator = ""
 
   env_three_letter = var.env_mapping[var.environment]
   env_fullname = var.env_mapping_fullname[var.environment]

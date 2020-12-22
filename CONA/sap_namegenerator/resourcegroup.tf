@@ -1,11 +1,14 @@
 locals {
 
-  sdu_name = length(var.codename) > 0 ? (
+ /* sdu_name = length(var.codename) > 0 ? (
     upper(format("RG-%s-%s-%s-%s", local.env_verified, local.location_short, var.codename, var.sap_sid))) : (
     upper(format("RG-%s-%s-%s", local.env_verified, local.location_short, var.sap_sid))
   )
 
-  deployer_name  = upper(format("RG-%s-%s", local.deployer_env_verified, local.deployer_location_short))
+*/
+  sdu_name = ""
+
+  deployer_name  = "" //upper(format("RG-%s-%s", local.deployer_env_verified, local.deployer_location_short))
   landscape_name = upper(format("RG-%s-%s", local.landscape_env_verified, local.location_short))
   library_name   = upper(format("RG-%s-%s", local.library_env_verified, local.location_short))
 
@@ -13,7 +16,7 @@ locals {
 
   deployer_storageaccount_name       = substr(replace(lower(format("stg%s%s%sdepdiag%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
   landscape_storageaccount_name      = substr(replace(lower(format("stg%s%s%sdiag%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
-  library_storageaccount_name        = substr(replace(lower(format("stg%s%s%slib%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
+  library_storageaccount_name        = substr(replace(lower(format("stg%s%s%ssaplib%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
   sdu_storageaccount_name            = substr(replace(lower(format("stg%s%s%sdiag%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
   terraformstate_storageaccount_name = substr(replace(lower(format("stg%s%s%stfstate%s", var.codename, var.environment, var.location, local.random_id_verified)), "/[^a-z0-9]/", ""), 0, var.azlimits.stgaccnt)
 
