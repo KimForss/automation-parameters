@@ -9,8 +9,8 @@ locals {
   sdu_name = ""
 
   deployer_name  = "" //upper(format("RG-%s-%s", local.deployer_env_verified, local.deployer_location_short))
-  landscape_name = upper(format("RG-%s-%s", local.landscape_env_verified, local.location_short))
-  library_name   = upper(format("RG-%s-%s", local.library_env_verified, local.location_short))
+  landscape_name = upper(format("%s-%s", local.landscape_env_verified, local.location_short))
+  library_name   = upper(format("%s-%s", local.library_env_verified, local.location_short))
 
   // Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. The name must be unique.
 
