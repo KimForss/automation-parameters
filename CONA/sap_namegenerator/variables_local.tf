@@ -234,7 +234,7 @@ variable resource_suffixes {
     "nic"                 = "-nic"
     "osdisk"              = "-OsDisk"
     "pip"                 = "-pip"
-    "ppg"                 = "-ppg"
+    "ppg"                 = "SAP-ppg"
     "storage_nic"         = "-storage-nic"
     "storage_subnet"      = "_storage-subnet"
     "storage_subnet_nsg"  = "_storageSubnet-nsg"

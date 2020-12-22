@@ -1,4 +1,4 @@
-resource_group_name     = "RG-S-WUS2-SAP_LIBRARY"
-storage_account_name    = "swus2tfstate1f9"
+resource_group_name     = "rg_Sandbox_S4_WestUS2"
+storage_account_name    = "stgswestus2tfstatec2a"
 container_name          = "tfstate"
-key                     = "RG-S-WUS2-EC-SNY.terraform.tfstate"
+key                     = "S-CR-SNY.terraform.tfstate"
