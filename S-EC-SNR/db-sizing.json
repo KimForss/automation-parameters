@@ -13,7 +13,7 @@
         "caching": "ReadWrite"
       },
       {
-        "name": "data",
+        "name": "data-prm-westus2",
         "count": 3,
         "disk_type": "Premium_LRS",
         "size_gb": 256,
@@ -22,7 +22,7 @@
         "mount_point": "/data"
       },
       {
-        "name": "log",
+        "name": "log-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
         "size_gb": 64,
@@ -31,22 +31,22 @@
         "mount_point": "/log"
       },
       {
-        "name": "shared",
+        "name": "shared-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
         "size_gb": 512,
         "caching": "None",
         "write_accelerator": false,
-        "mount_point": "/data"
+        "mount_point": "/shared"
       },
       {
-        "name": "sap",
+        "name": "sap-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
         "size_gb": 64,
         "caching": "None",
         "write_accelerator": false,
-        "mount_point": "/data"
+        "mount_point": "/sap"
       }
     ]
   }
