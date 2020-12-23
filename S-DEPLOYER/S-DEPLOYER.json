@@ -14,9 +14,9 @@
     "vnets": {
       "management": {
         "name": "MGMT",
-        "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2",
+        "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sandbox_westus2",
         "subnet_mgmt": {
-          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sanbox_westus2/subnets/snet_sandbox_westus2_App_01",
+          "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/virtualNetworks/vNet_Sandbox_westus2/subnets/snet_sandbox_westus2_App_01",
           "nsg": {
             "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_westus2/providers/Microsoft.Network/networkSecurityGroups/nsg_sandbox_s4hana_westus2"
           }
