@@ -14,8 +14,8 @@
   "key_vault": {
     "kv_user_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/kv-prm-sbx-wus2-s4hana-3",
     "kv_prvt_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_Sandbox_S4_WestUS2/providers/Microsoft.KeyVault/vaults/kv-prm-sbx-wus2-s4hana-4",
-    "kv_sshkey_prvt": "S-WUS2-sshkey",
-    "kv_sshkey_pub": "S-WUS2-sshkey-pub",
+    "kv_sshkey_prvt": "",
+    "kv_sshkey_pub": "",
     "kv_pwd": "S-WUS2-password",
     "kv_username": "S-WUS2-username"
   },
