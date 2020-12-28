@@ -365,7 +365,7 @@ locals {
   keys   = keys(var.resource_suffixes)
 
   fixed_resources = { for idx, keyv in local.keys :
-    local.keys[idx] => replace(replace(replace(var.resource_suffixes[keyv], "[SID]", var.sap_sid), "[ENVIRONMENT]", local.env_fullname),"[LOCATION]", var.location)
+    local.keys[idx] => replace(replace(replace(var.resource_suffixes[keyv], "[SID]", lower(var.sap_sid)), "[ENVIRONMENT]", local.env_fullname),"[LOCATION]", var.location)
 
   }
 
