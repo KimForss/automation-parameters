@@ -1,7 +1,7 @@
 {
   "Default": {
     "compute": {
-      "vm_size": "Standard_E4ds_v4",
+      "vm_size": "Standard_E4s_v4",
       "swap_size_gb": 2
     },
     "storage": [
@@ -25,7 +25,7 @@
         "name": "log-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
-        "size_gb": 192,
+        "size_gb": 64,
         "caching": "None",
         "write_accelerator": false,
         "mount_point": "/log"
