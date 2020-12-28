@@ -58,7 +58,7 @@ output naming {
       WEB_VMNAME               = local.web_server_vm_names
     }
 
-    resource_suffixes = var.resource_suffixes
+    resource_suffixes = tomap(local.fixed_resources)
 
     separator = local.separator
   }
