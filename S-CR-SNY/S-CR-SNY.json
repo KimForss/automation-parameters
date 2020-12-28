@@ -16,10 +16,8 @@
     "webdispatcher_count": 0,
     "use_DHCP" : true,
     "authentication": {
-      "type": "password",
-      "username": "azureadm"
-    },
-    "scs_zones" : ["1"]
+      "type": "password"
+    }
 
   },
   "databases": [
@@ -41,10 +39,8 @@
       "avset_arm_ids": [],
       "use_DHCP" : true,
       "authentication": {
-        "type": "password",
-        "username": "azureadm"
-      },
-      "zones" : ["1"]
+        "type": "password"
+      }
 
     }
   ],

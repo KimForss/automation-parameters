@@ -46,7 +46,7 @@
   "scs": {
     "Default": {
       "compute": {
-        "vm_size": "Standard_D8s_v3",
+        "vm_size": "Standard_E8ds_v4",
         "accelerated_networking": false
       },
       "storage": [{
@@ -58,14 +58,14 @@
         "write_accelerator": false
       },{
         "count": 1,
-        "name": "exe",
+        "name": "exe_prm_westus2_",
         "disk_type": "Premium_LRS",
         "size_gb": 300,
         "caching": "ReadWrite",
         "write_accelerator": false
       },{
         "count": 1,
-        "name": "SHRD",
+        "name": "SHRD_prm_westus2_",
         "disk_type": "Premium_LRS",
         "size_gb": 100,
         "caching": "ReadWrite",
@@ -81,14 +81,14 @@
       },
       "storage": [{
         "count": 1,
-        "name": "os",
+        "name": "os_prm_westus2_",
         "disk_type": "Premium_LRS",
         "size_gb": 64,
         "caching": "ReadWrite",
         "write_accelerator": false
       },{
         "count": 1,
-        "name": "data",
+        "name": "data_prm_westus2_",
         "disk_type": "Premium_LRS",
         "size_gb": 128,
         "caching": "ReadWrite",
