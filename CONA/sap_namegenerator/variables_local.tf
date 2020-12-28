@@ -362,10 +362,10 @@ locals {
   env_three_letter = var.env_mapping[var.environment]
   env_fullname = var.env_mapping_fullname[var.environment]
 
-  keys   = keys(module.sap_namegenerator.naming.resource_suffixes)
+  keys   = keys(var.resource_suffixes)
 
   fixed_resources = { for idx, keyv in local.keys :
-    local.keys[idx] => replace(replace(module.sap_namegenerator.naming.resource_suffixes[keyv], "[SID]", var.sap_sid), "[ENVIRONMENT]", local.env_fullname)
+    local.keys[idx] => replace(replace(var.resource_suffixes[keyv], "[SID]", var.sap_sid), "[ENVIRONMENT]", local.env_fullname)
 
   }
 
