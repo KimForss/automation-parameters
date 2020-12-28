@@ -1,7 +1,7 @@
 {
   "Default": {
     "compute": {
-      "vm_size": "Standard_E48ds_v4",
+      "vm_size": "Standard_E4s_v4",
       "swap_size_gb": 2
     },
     "storage": [
@@ -13,7 +13,7 @@
         "caching": "ReadWrite"
       },
       {
-        "name": "data_prm_westus2_",
+        "name": "data-prm-westus2",
         "count": 3,
         "disk_type": "Premium_LRS",
         "size_gb": 256,
@@ -22,7 +22,7 @@
         "mount_point": "/data"
       },
       {
-        "name": "log_prm_westus2_",
+        "name": "log-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
         "size_gb": 64,
@@ -31,7 +31,7 @@
         "mount_point": "/log"
       },
       {
-        "name": "shared_prm_westus2_",
+        "name": "shared-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
         "size_gb": 512,
@@ -40,7 +40,7 @@
         "mount_point": "/shared"
       },
       {
-        "name": "sap_prm_westus2_",
+        "name": "sap-prm-westus2",
         "count": 1,
         "disk_type": "Premium_LRS",
         "size_gb": 64,

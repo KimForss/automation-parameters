@@ -1,0 +1,23 @@
+{
+  "infrastructure": {
+    "region": "westeurope",
+    "environment": "Demo",
+    "codename": "s4hana",
+    "resource_group": {
+      "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/Demo-environment"
+    },
+    "deployers": [
+      {
+        "use_DHCP": true
+      }
+    ],
+    "vnets": {
+      "management": {
+        "name": "MGMT"
+        
+      }
+    }
+  },
+  "key_vault": {
+  }
+}

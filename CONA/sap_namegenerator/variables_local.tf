@@ -208,16 +208,16 @@ variable resource_suffixes {
     "admin_nic"           = "-admin-nic"
     "admin_subnet"        = "admin-subnet"
     "admin_subnet_nsg"    = "adminSubnet-nsg"
-    "app_alb"             = "lb_app_s4hana_sandbox_westus2_01"
-    "app_avset"           = "as_app_s4hana_sandbox_westus2_01"
+    "app_alb"             = "lb_[SID]_app_s4hana_[ENVIRONMENT]_[LOCATION]_01"
+    "app_avset"           = "as_[SID]_app_s4hana_[ENVIRONMENT]_[LOCATION]_01"
     "app_subnet"          = "app-subnet"
     "app_subnet_nsg"      = "appSubnet-nsg"
-    "db_alb"              = "lb_db_s4hana_sandbox_westus2_01"
-    "db_alb_bepool"       = "lb_db_s4hana_sandbox_westus2_01-bePool"
-    "db_alb_feip"         = "lb_db_s4hana_sandbox_westus2_01-feip"
-    "db_alb_hp"           = "lb_db_s4hana_sandbox_westus2_01-hp"
-    "db_alb_rule"         = "lb_db_s4hana_sandbox_westus2_01-rule_"
-    "db_avset"            = "as_db_s4hana_sandbox_westus2_01"
+    "db_alb"              = "lb_[SID]_db_s4hana_[ENVIRONMENT]_[LOCATION]_01"
+    "db_alb_bepool"       = "lb_[SID]_db_s4hana_[ENVIRONMENT]_[LOCATION]_01-bePool"
+    "db_alb_feip"         = "lb_[SID]_db_s4hana_[ENVIRONMENT]_[LOCATION]_01-feip"
+    "db_alb_hp"           = "lb_[SID]_db_s4hana_[ENVIRONMENT]_[LOCATION]_01-hp"
+    "db_alb_rule"         = "lb_[SID]_db_s4hana_[ENVIRONMENT]_[LOCATION]_01-rule_"
+    "db_avset"            = "as_[SID]_db_s4hana_[ENVIRONMENT]_[LOCATION]_01"
     "db_nic"              = "-db-nic"
     "db_subnet"           = "db-subnet"
     "db_subnet_nsg"       = "dbSubnet-nsg"
@@ -234,30 +234,30 @@ variable resource_suffixes {
     "nic"                 = "-nic"
     "osdisk"              = "-OsDisk"
     "pip"                 = "-pip"
-    "ppg"                 = "ppg_s4hana_sandbox_westus2_01"
+    "ppg"                 = "ppg_[SID]_s4hana_[ENVIRONMENT]_[LOCATION]_01"
     "storage_nic"         = "-storage-nic"
     "storage_subnet"      = "_storage-subnet"
     "storage_subnet_nsg"  = "_storageSubnet-nsg"
-    "scs_alb"             = "lb_scs_s4hana_sandbox_westus2_01"
-    "scs_alb_bepool"      = "lb_scs_s4hana_sandbox_westus2_01-bePool"
-    "scs_alb_feip"        = "lb_scs_s4hana_sandbox_westus2_01-feip"
-    "scs_alb_hp"          = "lb_scs_s4hana_sandbox_westus2_01-hp"
-    "scs_alb_rule"        = "lb_scs_s4hana_sandbox_westus2_01-rule_"
-    "scs_avset"           = "as_scs_s4hana_sandbox_westus2_01"
-    "scs_ers_feip"        = "scsErs-feip"
-    "scs_ers_hp"          = "scsErs-hp"
-    "scs_ers_rule"        = "scsErs-rule_"
-    "scs_scs_rule"        = "scsScs-rule_"
+    "scs_alb"             = "lb_[SID]_scs_s4hana_[ENVIRONMENT]_[LOCATION]_01"
+    "scs_alb_bepool"      = "lb_[SID]_scs_s4hana_[ENVIRONMENT]_[LOCATION]_01-bePool"
+    "scs_alb_feip"        = "lb_[SID]_scs_s4hana_[ENVIRONMENT]_[LOCATION]_01-feip"
+    "scs_alb_hp"          = "lb_[SID]_scs_s4hana_[ENVIRONMENT]_[LOCATION]_01-hp"
+    "scs_alb_rule"        = "lb_[SID]_scs_s4hana_[ENVIRONMENT]_[LOCATION]_01-rule_"
+    "scs_avset"           = "as_[SID]_scs_s4hana_[ENVIRONMENT]_[LOCATION]_01"
+    "scs_ers_feip"        = "lb_[SID]_ers_s4hana_[ENVIRONMENT]_[LOCATION]_01-feip"
+    "scs_ers_hp"          = "lb_[SID]_ers_s4hana_[ENVIRONMENT]_[LOCATION]_01-hp"
+    "scs_ers_rule"        = "lb_[SID]_scsErs_s4hana_[ENVIRONMENT]_[LOCATION]_01-rule_"
+    "scs_scs_rule"        = "lb_[SID]_scsScs_s4hana_[ENVIRONMENT]_[LOCATION]_01-rule_"
     "sdu_rg"              = ""
     "vm"                  = ""
     "vnet"                = "-vnet"
     "vnet_rg"             = "-INFRASTRUCTURE"
-    "web_alb"             = "web-alb"
-    "web_alb_bepool"      = "webAlb-bePool"
-    "web_alb_feip"        = "webAlb-feip"
-    "web_alb_hp"          = "webAlb-hp"
-    "web_alb_inrule"      = "webAlb-inRule"
-    "web_avset"           = "web-avset"
+    "scs_alb"             = "lb_[SID]_web_s4hana_[ENVIRONMENT]_[LOCATION]_01"
+    "scs_alb_bepool"      = "lb_[SID]_web_s4hana_[ENVIRONMENT]_[LOCATION]_01-bePool"
+    "scs_alb_feip"        = "lb_[SID]_web_s4hana_[ENVIRONMENT]_[LOCATION]_01-feip"
+    "scs_alb_hp"          = "lb_[SID]_web_s4hana_[ENVIRONMENT]_[LOCATION]_01-hp"
+    "scs_alb_rule"        = "lb_[SID]_web_s4hana_[ENVIRONMENT]_[LOCATION]_01-rule_"
+    "scs_avset"           = "as_[SID]_web_s4hana_[ENVIRONMENT]_[LOCATION]_01"
     "web_subnet"          = "web-subnet"
     "web_subnet_nsg"      = "webSubnet-nsg"
 
@@ -361,6 +361,13 @@ locals {
 
   env_three_letter = var.env_mapping[var.environment]
   env_fullname = var.env_mapping_fullname[var.environment]
+
+  keys   = keys(var.resource_suffixes)
+
+  fixed_resources = { for idx, keyv in local.keys :
+    local.keys[idx] => replace(replace(replace(var.resource_suffixes[keyv], "[SID]", lower(var.sap_sid)), "[ENVIRONMENT]", local.env_fullname),"[LOCATION]", var.location)
+
+  }
 
 }
 
