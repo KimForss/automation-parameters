@@ -1,0 +1,53 @@
+{
+  "Default": {
+    "compute": {
+      "vm_size": "Standard_E4s_v4",
+      "swap_size_gb": 2
+    },
+    "storage": [
+      {
+        "name": "os",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 64,
+        "caching": "ReadWrite"
+      },
+      {
+        "name": "data-prm-westus2",
+        "count": 3,
+        "disk_type": "Premium_LRS",
+        "size_gb": 256,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/data"
+      },
+      {
+        "name": "log-prm-westus2",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 64,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/log"
+      },
+      {
+        "name": "shared-prm-westus2",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 512,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/shared"
+      },
+      {
+        "name": "sap-prm-westus2",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 64,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/sap"
+      }
+    ]
+  }
+}
