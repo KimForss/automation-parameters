@@ -5,7 +5,7 @@
     "codename": "bi",
     "region": "westus2",
     "resource_group" : {
-      "arm_id" : "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_sandbox_s4shn_westus2"
+      "arm_id" : "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_sandbox_s4shb_westus2"
     },
     "vnets": {
       "sap": {
@@ -32,7 +32,7 @@
   },
   "application": {
     "application_server_count": 0,
-    "enable_deployment": false,
+    "enable_deployment": true,
     "ers_instance_number": "02",
     "os": {
       "publisher": "suse",
@@ -41,9 +41,9 @@
       "version": "latest"
     },
     "scs_high_availability": false,
-    "scs_server_count": 0,
+    "scs_server_count": 1,
     "scs_instance_number": "01",
-    "sid": "SHN",
+    "sid": "SHB",
     "webdispatcher_count": 0,
     "use_DHCP": true,
     "authentication": {
@@ -59,7 +59,7 @@
         "sku": "gen1",
         "version": "latest"
       },
-      "platform": "HANA",
+      "platform": "NONE",
       "size": "Default",
       "dbnodes": [
         {}

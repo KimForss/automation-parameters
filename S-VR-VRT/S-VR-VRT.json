@@ -2,10 +2,10 @@
   "infrastructure": {
     "ppg": {},
     "environment": "s",
-    "codename": "bi",
+    "codename": "vrt",
     "region": "westus2",
     "resource_group" : {
-      "arm_id" : "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_sandbox_s4shn_westus2"
+      "arm_id" : "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_sandbox_s4vrt_westus2"
     },
     "vnets": {
       "sap": {
@@ -31,19 +31,20 @@
     }
   },
   "application": {
-    "application_server_count": 0,
-    "enable_deployment": false,
+    "application_server_count": 1,
+    "enable_deployment": true,
     "ers_instance_number": "02",
     "os": {
-      "publisher": "suse",
-      "offer": "sles-sap-12-sp5",
-      "sku": "gen1",
+      "os_type": "Windows",   
+      "publisher": "MicrosoftWindowsServer",
+      "offer": "WindowsServer",
+      "sku": "2012-R2-Datacenter",
       "version": "latest"
     },
     "scs_high_availability": false,
     "scs_server_count": 0,
     "scs_instance_number": "01",
-    "sid": "SHN",
+    "sid": "VRT",
     "webdispatcher_count": 0,
     "use_DHCP": true,
     "authentication": {
@@ -54,9 +55,10 @@
     {
       "high_availability": false,
       "os": {
-        "publisher": "suse",
-        "offer": "sles-sap-12-sp5",
-        "sku": "gen1",
+        "os_type": "Windows",
+        "publisher": "MicrosoftWindowsServer",
+        "offer": "WindowsServer",
+        "sku": "2012-R2-Datacenter",
         "version": "latest"
       },
       "platform": "HANA",
