@@ -61,7 +61,7 @@
         "sku": "2012-R2-Datacenter",
         "version": "latest"
       },
-      "platform": "HANA",
+      "platform": "SQLSERVER",
       "size": "Default",
       "dbnodes": [
         {}
