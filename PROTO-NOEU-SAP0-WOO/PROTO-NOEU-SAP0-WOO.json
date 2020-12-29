@@ -1,7 +1,4 @@
 {
-  "deployer_tfstate_key": "PROTO-NOEU-MGMT-INFRASTRUCTURE.terraform.tfstate",
-  "landscape_tfstate_key": "PROTO-NOEU-LANDSCAPE.terraform.tfstate",
-  "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953",
   "application": {
     "application_server_count": 6,
     "enable_deployment": true,
@@ -31,7 +28,7 @@
     "webdispatcher_count": 2,
     "app_zones": ["1", "2", "3"],
     "scs_zones": ["1", "2"],
-    "web_zones": ["1", "2terr"],
+    "web_zones": ["1", "2"],
     "dual_nics": true,
     "use_DHCP" : true,
     "app_tags": {
@@ -44,8 +41,7 @@
       "hello": "web world"
     },
     "authentication": {
-      "type": "password",
-      "username": "azureadm"
+      "type": "password"
     }
   },
   "databases": [
@@ -63,7 +59,11 @@
       "dual_nics": true,
       "observer": {
         "nic_ips": ["10.6.2.22", "10.6.2.25"],
-        "zones" : ["3"]
+        "zones" : ["3"],
+        "authentication": {
+          "type": "key",
+          "username" :"azureadm"
+        }
       },
       "dbnodes": [
         {
@@ -75,23 +75,23 @@
       "tags" :
       {
         
+      },
+      "authentication": {
+        "type": "key"
       }
     }
   ],
   "infrastructure": {
-    "landscape": {
-      "key_vault_arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
-      "sid_public_key_secret_name": "PROTO-NOEU-MGMT-sshkey-pub"
-    },
     "ppg": {},
     "environment": "PROTO",
     "region": "northeurope",
-    "dynamic_addressing": true,
+    "use_DHCP" : true,
     "anchor_vms": {
       "sku": "Standard_D4s_v4",
+      "use_DHCP" : true,
       "authentication": {
         "type": "key",
-        "username": "azureadm"
+        "username" : "cloudAdmin"
       },
       "accelerated_networking": true,
       "os": {
@@ -99,8 +99,7 @@
         "offer": "Oracle-Linux",
         "sku": "81",
         "version": "latest"
-      },
-      "nic_ips": ["10.6.2.45", "10.6.2.46", "10.6.2.47"]
+      }
     },
 
     "resource_group": {
