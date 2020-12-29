@@ -59,7 +59,11 @@
       "dual_nics": true,
       "observer": {
         "nic_ips": ["10.6.2.22", "10.6.2.25"],
-        "zones" : ["3"]
+        "zones" : ["3"],
+        "authentication": {
+          "type": "key",
+          "username" :"azureadm"
+        }
       },
       "dbnodes": [
         {
@@ -71,14 +75,13 @@
       "tags" :
       {
         
+      },
+      "authentication": {
+        "type": "key"
       }
     }
   ],
   "infrastructure": {
-    "landscape": {
-      "key_vault_arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
-      "sid_public_key_secret_name": "PROTO-NOEU-MGMT-sshkey-pub"
-    },
     "ppg": {},
     "environment": "PROTO",
     "region": "northeurope",
