@@ -2,10 +2,10 @@
   "infrastructure": {
     "ppg": {},
     "environment": "s",
-    "codename": "vrt",
+    "codename": "leo",
     "region": "westus2",
     "resource_group": {
-      "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_sandbox_s4vrt_westus2"
+      "arm_id": "/subscriptions/a96e49c9-c03d-4ead-adc8-069ffcbc3b29/resourceGroups/rg_sandbox_s4leo_westus2"
     },
     "vnets": {
       "sap": {
