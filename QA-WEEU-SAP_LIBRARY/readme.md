@@ -14,10 +14,21 @@ az keyvault create --location westeurope --name qaweeushared2021 --resource-grou
 
 Secrets
 
+```console
 az keyvault secret set --name "QA-subscription-id" --vault-name "qaweeushared2021" --value "<subscription-id>";
 az keyvault secret set --name "QA-client-id"       --vault-name "qaweeushared2021" --value "<appId>";
 az keyvault secret set --name "QA-client-secret"   --vault-name "qaweeushared2021" --value "<password>";
 az keyvault secret set --name "QA-tenant-id"       --vault-name "qaweeushared2021" --value "<tenant>";
+```
+
+
+**Deployment**
+
+Code branch "kimforss-if-kv-provided-dont-read-deployertfstate-library"
+
+```console
+git checkout kimforss-if-kv-provided-dont-read-deployertfstate-library
+```
 
 SAP Library
 
