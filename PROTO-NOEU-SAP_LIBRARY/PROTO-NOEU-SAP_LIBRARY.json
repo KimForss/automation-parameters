@@ -3,7 +3,6 @@
     "region": "northeurope",
     "environment": "PROTO",
     "resource_group": {
-      "is_existing": true,
       "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY"
     }
   },
@@ -16,23 +15,27 @@
   "key_vault": {
     "kv_user_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
     "kv_prvt_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTprvt05E",
+    "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E",
     "kv_sshkey_prvt": "PROTO-NOEU-MGMT-sshkey",
     "kv_sshkey_pub": "PROTO-NOEU-MGMT-sshkey-pub",
     "kv_pwd": ""
   },
   "storage_account_sapbits": {
     "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeusaplib953",
-    "file_share" :{
-      "is_existing" : true
+    "file_share": {
+      "is_existing": true
     },
-    "sapbits_blob_container" :{
-      "is_existing" : true
+    "sapbits_blob_container": {
+      "is_existing": true
     }
   },
   "storage_account_tfstate": {
     "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953",
-    "tfstate_blob_container" : {
-      "is_existing" : true
+    "tfstate_blob_container": {
+      "is_existing": true
+    },
+    "ansible_blob_container": {
+      "is_existing": true
     }
   },
   "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953"
