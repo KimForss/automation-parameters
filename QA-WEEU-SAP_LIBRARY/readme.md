@@ -32,8 +32,14 @@ git checkout kimforss-if-kv-provided-dont-read-deployertfstate-library
 
 SAP Library
 
+```console
 terraform init ../../../sap-hana/deploy/terraform/bootstrap/sap_library/
+```
 
+```console
 terraform plan -var-file QA-WEEU-SAP_LIBRARY.json ../../../sap-hana/deploy/terraform/bootstrap/sap_library/
+```
 
+```console
 terraform apply -var-file QA-WEEU-SAP_LIBRARY.json ../../../sap-hana/deploy/terraform/bootstrap/sap_library/
+```
