@@ -43,3 +43,17 @@ terraform plan -var-file QA-WEEU-SAP_LIBRARY.json ../../../sap-hana/deploy/terra
 ```console
 terraform apply -var-file QA-WEEU-SAP_LIBRARY.json ../../../sap-hana/deploy/terraform/bootstrap/sap_library/
 ```
+
+**State migration**
+
+```console
+terraform init --backend-config backend-config.tfvars -upgrade=true ../../../sap-hana/deploy/terraform/run/sap_library/
+```
+
+```console
+terraform plan -var-file QA-WEEU-SAP_LIBRARY.json ../../../sap-hana/deploy/terraform/run/sap_library/
+```
+
+```console
+terraform apply -var-file QA-WEEU-SAP_LIBRARY.json ../../../sap-hana/deploy/terraform/run/sap_library/
+```
