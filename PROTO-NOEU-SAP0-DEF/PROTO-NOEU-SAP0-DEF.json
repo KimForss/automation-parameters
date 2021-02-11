@@ -24,7 +24,7 @@
       "hello": "web world"
     },
     "authentication": {
-      "type": "password"
+      "type": "key"
     }
 
 
@@ -43,7 +43,7 @@
       "dual_nics": false,
       "use_DHCP" : true,
       "authentication": {
-        "type": "password"
+        "type": "key"
       },
      "dbnodes": [
         {
