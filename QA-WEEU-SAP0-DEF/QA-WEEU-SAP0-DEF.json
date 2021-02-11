@@ -1,0 +1,122 @@
+{
+    "application": {
+        "application_server_count": 2,
+        "enable_deployment": true,
+        "ers_instance_number": "02",
+        "os": {
+            "publisher": "Oracle",
+            "offer": "Oracle-Linux",
+            "sku": "79-gen2",
+            "version": "latest"
+        },
+        "scs_os": {
+            "publisher": "suse",
+            "offer": "sles-sap-12-sp5",
+            "sku": "gen2",
+            "version": "latest"
+        },
+        "scs_high_availability": false,
+        "scs_server_count": 2,
+        "scs_instance_number": "01",
+        "sid": "DEF",
+        "webdispatcher_count": 0,
+        "dual_nics": false,
+        "use_DHCP": true,
+        "app_zones": [
+            "2"
+        ],
+        "scs_zones": [
+            "2",
+            "1"
+        ],
+        "authentication": {
+            "type": "password"
+        },
+        "app_tags": {
+            "applicationService": "Q50 - TEST",
+            "businessUnit": "AAID Analytics & Data Platforms",
+            "environment": "nonProd",
+            "fabObject": "10126",
+            "iTSolution": "BW",
+            "landscape": "x50",
+            "$perfOptimizationLevel": "1",
+            "role": "QA",
+            "sapSID": "Q50",
+            "supportedBy": "runservicesaptech@hm.com"
+        },
+        "scs_tags": {
+            "applicationService": "Q50 - TEST",
+            "businessUnit": "AAID Analytics & Data Platforms",
+            "environment": "nonProd",
+            "fabObject": "10126",
+            "iTSolution": "BW",
+            "landscape": "x50",
+            "$perfOptimizationLevel": "1",
+            "role": "QA",
+            "sapSID": "Q50",
+            "supportedBy": "runservicesaptech@hm.com"
+        },
+        "web_tags": {}
+    },
+    "databases": [
+        {
+            "authentication": {
+                "type": "password"
+            },
+            "high_availability": false,
+            "os": {
+                "publisher": "Oracle",
+                "offer": "Oracle-Linux",
+                "sku": "79-gen2",
+                "version": "latest"
+            },
+            "platform": "ORACLE",
+            "zones": [
+                "2",
+                "1"
+            ],
+            "size": "Default",
+            "use_DHCP": false,
+            "dual_nics": false,
+            "dbnodes": [
+                {},
+                {}
+            ],
+            "tags": {
+                "applicationService": "Q50 - TEST",
+                "businessUnit": "AAID Analytics & Data Platforms",
+                "environment": "nonProd",
+                "fabObject": "10126",
+                "iTSolution": "BW",
+                "landscape": "x50",
+                "$perfOptimizationLevel": "1",
+                "role": "QA",
+                "sapSID": "Q50",
+                "supportedBy": "runservicesaptech@hm.com"
+            }
+        }
+    ],
+    "infrastructure": {
+        "environment": "QA",
+        "region": "westeurope",
+        "vnets": {
+            "sap": {
+                "subnet_admin": {
+                    "prefix": "10.10.1.0/26"
+                },
+                "subnet_app": {
+                    "prefix": "10.10.2.0/26"
+                },
+                "subnet_db": {
+                    "prefix": "10.10.3.0/26"
+                }
+            }
+        }
+    },
+    "options": {},
+    "key_vault": {
+        "kv_user_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/QA-WEUE-SHARED/providers/Microsoft.KeyVault/vaults/QAWEEUSAPLIBuserCCC",
+        "kv_prvt_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/QA-WEUE-SHARED/providers/Microsoft.KeyVault/vaults/QAWEEUSAPLIBprvtCCC",
+        "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/QA-WEUE-SHARED/providers/Microsoft.KeyVault/vaults/qaweeushared2021"
+    }
+}

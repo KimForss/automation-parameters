@@ -1,0 +1,17 @@
+{
+  "Demo": {
+    "compute": {
+      "vm_size": "Standard_D4s_v3",
+      "swap_size_gb": 2
+    },
+    "storage": [
+      {
+        "name": "os",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 32,
+        "caching": "ReadWrite"
+      }
+    ]
+  }
+}

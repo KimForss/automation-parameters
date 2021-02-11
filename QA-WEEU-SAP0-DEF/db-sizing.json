@@ -1,0 +1,50 @@
+{
+  "Default": {
+    "compute": {
+      "vm_size": "Standard_E4ds_v4",
+      "swap_size_gb": 2
+    },
+    "storage": [
+      {
+        "name": "os",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 128,
+        "caching": "ReadWrite",
+        "write_accelerator": false
+      },
+      {
+        "name": "OracleData",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 128,
+        "caching": "ReadOnly",
+        "write_accelerator": false
+      },
+      {
+        "name": "OracleArchive",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 128,
+        "caching": "None",
+        "write_accelerator": false
+      },
+      {
+        "name": "OracleOrigLog",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 64,
+        "caching": "None",
+        "write_accelerator": false
+      },
+      {
+        "name": "OracleMirrLog",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 64,
+        "caching": "None",
+        "write_accelerator": false
+      }
+    ]
+  }
+}

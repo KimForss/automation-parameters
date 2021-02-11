@@ -1,0 +1,1 @@
+echo $ARM_SUBSCRIPTION_ID

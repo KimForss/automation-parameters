@@ -1,33 +1,33 @@
 {
   "application": {
-    "application_server_count": 3,
+    "application_server_count": 1,
     "enable_deployment": true,
     "ers_instance_number": "02",
     "os": {
-      "offer": "sles-sap-12-sp5",
-      "publisher": "SUSE",
-      "sku": "gen1",
-      "version": "latest"
+      "os_type" : "Linux",
+      "source_image_id": "/subscriptions/80d5ed43-1465-432b-8914-5e1f68d49330/resourceGroups/SharedImages/providers/Microsoft.Compute/galleries/CorpImageGalleryEMEA/images/NETWEAVER2/versions/1.0.0"
     },
     "scs_high_availability": true,
     "scs_server_count": 1,
     "scs_instance_number": "01",
-    "sid": "ABC",
+    "sid": "DEF",
     "webdispatcher_count": 1,
     "dual_nics": false,
-    "use_DHCP": true,
-    "app_tags": {
+    "use_DHCP" : true,
+    "app_tags" : {
       "hello": "app world"
     },
-    "scs_tags": {
+    "scs_tags" : {
       "hello": "scs world"
     },
-    "web_tags": {
+    "web_tags" : {
       "hello": "web world"
     },
     "authentication": {
       "type": "password"
     }
+
+
   },
   "databases": [
     {
@@ -41,25 +41,25 @@
       "platform": "HANA",
       "size": "Demo",
       "dual_nics": false,
-      "use_DHCP": true,
+      "use_DHCP" : true,
       "authentication": {
         "type": "password"
       },
-      "dbnodes": [
-        {},
-        {}
+     "dbnodes": [
+        {
+        },
+        {
+          
+        }
       ]
     }
   ],
   "infrastructure": {
     "environment": "PROTO",
     "region": "northeurope",
-    "resource_group": {
-      "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROT-ABC"
-    },
-    "disk_encryption_set_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.Compute/diskEncryptionSets/PROTO-NOEU-KEY_SET",
     "vnets": {
-      "management": {},
+      "management": {
+      },
       "sap": {
         "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet",
         "subnet_admin": {
@@ -90,7 +90,9 @@
     }
   },
   "options": {},
-  "key_vault": {
+  "key_vault" : 
+  {
     "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
   }
+ 
 }

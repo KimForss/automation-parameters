@@ -12,15 +12,16 @@
             "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.Network/networkSecurityGroups/PROTO-NOEU-MGMT_deploymentSubnet-nsg"
           }
         },
-
-        "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953"
-      }
+        "subnet_fw": {
+          "prefix": "10.0.9.0/26"
+        }
+      },
+      "tfstate_resource_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953"
     },
     "resource_group": {
       "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE"
     }
   },
-  
   "options": {
     "enable_secure_transfer": true,
     "enable_deployer_public_ip": true
@@ -32,8 +33,26 @@
     "kv_sshkey_pub": "PROTO-NOEU-MGMT-sshkey-pub",
     "kv_pwd": "",
     "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
-
   },
-  "input_public_key_secret_name" :"PROTO-NOEU-MGMT-sshkey-pub",
-  "input_private_key_secret_name": "PROTO-NOEU-MGMT-sshkey"
+  "input_public_key_secret_name": "PROTO-NOEU-MGMT-sshkey-pub",
+  "input_private_key_secret_name": "PROTO-NOEU-MGMT-sshkey",
+  "firewall_deployment": true,
+  "firewall_rule_subnets": [
+    "10.6.1.0/24",
+    "10.6.2.0/24",
+    "10.6.3.0/24",
+    "10.6.4.0/24",
+    "10.6.1.0/24"
+  ],
+  "firewall_allowed_ipaddresses": [
+    "52.158.42.90",
+    "13.79.120.39",
+    "52.155.248.41",
+    "13.91.47.76",
+    "40.85.190.91",
+    "52.187.75.218",
+    "52.174.163.213",
+    "52.237.203.198"
+  ],
+  "assign_subscription_permissions" : false
 }
