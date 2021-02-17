@@ -1,0 +1,14 @@
+{
+  "environmentName": "AzureCloud",
+  "homeTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "id": "8d8422a3-a9c1-4fe9-b880-adcf61557c71",
+  "isDefault": true,
+  "managedByTenants": [],
+  "name": "AG-GE-CE-KIMFORSS-SAP",
+  "state": "Enabled",
+  "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "user": {
+    "name": "kimforss@microsoft.com",
+    "type": "user"
+  }
+}

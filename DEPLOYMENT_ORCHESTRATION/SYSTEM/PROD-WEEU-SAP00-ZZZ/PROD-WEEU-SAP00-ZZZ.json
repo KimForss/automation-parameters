@@ -1,0 +1,55 @@
+{
+  "application": {
+    "application_server_count": 1,
+    "enable_deployment": true,
+    "ers_instance_number": "02",
+    "os": {
+      "os_type": "Linux",
+      "source_image_id": "/subscriptions/80d5ed43-1465-432b-8914-5e1f68d49330/resourceGroups/SharedImages/providers/Microsoft.Compute/galleries/CorpImageGalleryEMEA/images/NETWEAVER2/versions/1.0.0"
+    },
+    "scs_high_availability": true,
+    "scs_server_count": 1,
+    "scs_instance_number": "01",
+    "sid": "ZZZ",
+    "webdispatcher_count": 1,
+    "dual_nics": false,
+    "use_DHCP": true
+  },
+  "databases": [
+    {
+      "high_availability": false,
+      "os": {
+        "offer": "sles-sap-12-sp5",
+        "publisher": "SUSE",
+        "sku": "gen1",
+        "version": "latest"
+      },
+      "platform": "HANA",
+      "size": "Default",
+      "use_DHCP": true,
+      "dbnodes": [
+        {}
+      ]
+    }
+  ],
+  "infrastructure": {
+    "environment": "PROD",
+    "region": "westeurope",
+    "vnets": {
+      "sap": {
+        "subnet_admin": {
+          "prefix": "10.100.0.0/27"
+        },
+        "subnet_app": {
+          "prefix": "10.100.0.32/27"
+        },
+        "subnet_db": {
+          "prefix": "10.100.0.64/27"
+        }
+      }
+    }
+  },
+  "options": {
+    "resource_offset": 1
+  }
+}

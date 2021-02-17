@@ -1,7 +1,7 @@
 ####################################################
-# Empty backend file to overcome an Terraform issue 
+# To overcome terraform issue                      #
 ####################################################
- 
- terraform { 
-	 backend "azurerm" {} 
+terraform {
+    backend "local" {}
 }
+
