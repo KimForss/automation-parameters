@@ -1,0 +1,18 @@
+{
+    "authentication": {
+        "username": "azureadm"
+    },
+    "diagnostics_storage_account": {
+        "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/protonoeutfstate953"
+    },
+    "infrastructure": {
+        "environment": "PROTO",
+        "region": "northeurope",
+        "vnets": {
+            "sap": {
+                "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet"
+            }
+        }
+    },
+    "options": {}
+}
