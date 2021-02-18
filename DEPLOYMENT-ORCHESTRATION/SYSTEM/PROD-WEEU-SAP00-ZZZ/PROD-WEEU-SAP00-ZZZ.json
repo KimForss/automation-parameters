@@ -5,7 +5,10 @@
     "ers_instance_number": "02",
     "os": {
       "os_type": "Linux",
-      "source_image_id": "/subscriptions/80d5ed43-1465-432b-8914-5e1f68d49330/resourceGroups/SharedImages/providers/Microsoft.Compute/galleries/CorpImageGalleryEMEA/images/NETWEAVER2/versions/1.0.0"
+      "offer": "sles-sap-12-sp5",
+      "publisher": "SUSE",
+      "sku": "gen1",
+      "version": "latest"
     },
     "scs_high_availability": true,
     "scs_server_count": 1,
