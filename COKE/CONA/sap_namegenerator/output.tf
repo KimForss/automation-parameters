@@ -5,6 +5,12 @@ output naming {
       SDU      = length(var.custom_prefix) > 0 ? var.custom_prefix : local.sdu_name
       VNET     = local.landscape_name
       LIBRARY  = local.library_name
+    },
+    resourcegroup_names = {
+      DEPLOYER = local.deployer_name
+      SDU      = length(var.custom_prefix) > 0 ? var.custom_prefix : local.sdu_name
+      VNET     = local.landscape_name
+      LIBRARY  = local.library_name
     }
     storageaccount_names = {
       DEPLOYER = local.deployer_storageaccount_name

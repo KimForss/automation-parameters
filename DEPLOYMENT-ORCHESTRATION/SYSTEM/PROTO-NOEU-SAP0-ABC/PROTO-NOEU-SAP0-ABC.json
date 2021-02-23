@@ -9,6 +9,12 @@
       "sku": "gen1",
       "version": "latest"
     },
+    "scs_os": {
+      "offer": "sles-sap-15-sp1",
+      "publisher": "SUSE",
+      "sku": "gen1",
+      "version": "latest"
+    },
     "scs_high_availability": true,
     "scs_server_count": 1,
     "scs_instance_number": "01",
@@ -61,7 +67,6 @@
     "vnets": {
       "management": {},
       "sap": {
-        "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet",
         "subnet_admin": {
           "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet/subnets/PROTO-NOEU-SAPPROTO-subnetAdmin",
           "nsg": {
