@@ -3,13 +3,10 @@
   "infrastructure": {
     "environment": "QA",
     "region": "westeurope",
-    "resource_group": {
-      "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/QA-WEUE-SHARED"
-    },
     "vnets": {
       "sap": {
-        "name": "QA-NOEU-SAP-vnet",
-        "address_space": "10.10.0.0/24"
+        "name": "SAP01",
+        "address_space": "10.200.0.0/24"
       }
     }
   },

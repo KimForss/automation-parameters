@@ -58,5 +58,10 @@ $dirname = "LIBRARY\PROD-WEEU-SAP_LIBRARY\"
 
 Remove-Items -rgName $rgname -dirname $dirname
 
+$rgname = "PROD-WEEU-SAP00-ZZZ"
+$dirname = "LANDSCAPE\PROD-WEEU-SAP00-ZZZ\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
 
 Get-Module
