@@ -1,17 +1,20 @@
 {
   "infrastructure": {
     "region": "westeurope",
-    "environment": "PROD",
+    "environment": "DEV",
     "vnets": {
       "management": {
-        "address_space": "10.0.20.0/25",
+        "address_space": "10.10.20.0/25",
         "subnet_mgmt": {
-          "prefix": "10.0.20.0/28"
+          "prefix": "10.10.20.64/28"
         },
         "subnet_fw": {
-          "prefix": "10.0.20.64/26"
+          "prefix": "10.10.20.0/26"
         }
       }
+    },
+    "resource_group": {
+      "name": "WEEU-DEP00-INFRASTRUCTURE"
     }
   },
   "options": {

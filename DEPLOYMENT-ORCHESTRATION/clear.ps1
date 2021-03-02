@@ -58,5 +58,43 @@ $dirname = "LIBRARY\PROD-WEEU-SAP_LIBRARY\"
 
 Remove-Items -rgName $rgname -dirname $dirname
 
+$rgname = "PROD-WEEU-SAP00-ZZZ"
+$dirname = "LANDSCAPE\PROD-WEEU-SAP00-ZZZ\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
+
+$rgname = "PROD-WEEU-DEP00-INFRASTRUCTURE"
+$dirname = "DEPLOYER\PROD-WEEU-DEP00-INFRASTRUCTURE\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "PROD-WEEU-SAP00-INFRASTRUCTURE"
+$dirname = "LANDSCAPE\PROD-WEEU-SAP00-INFRASTRUCTURE\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "PROD-WEEU-SAP_LIBRARY"
+$dirname = "LIBRARY\PROD-WEEU-SAP_LIBRARY\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "DEV-WEEU-SAP00-ZZZ"
+$dirname = "LANDSCAPE\DEV-WEEU-SAP00-ZZZ\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "DEV-WEEU-SAP01-INFRASTRUCTURE"
+$dirname = "LANDSCAPE\DEV-WEEU-SAP01-INFRASTRUCTURE\"
+
+Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "WEEU-DEP00-INFRASTRUCTURE"
+$dirname = "DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE"
+Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "WEEU-SAP_LIBRARY"
+$dirname = "LIBRARY\DEV-WEEU-SAP_LIBRARY"
+Remove-Items -rgName $rgname -dirname $dirname
 
 Get-Module

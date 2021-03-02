@@ -37,22 +37,5 @@
   "input_public_key_secret_name": "PROTO-NOEU-MGMT-sshkey-pub",
   "input_private_key_secret_name": "PROTO-NOEU-MGMT-sshkey",
   "firewall_deployment": true,
-  "firewall_rule_subnets": [
-    "10.6.1.0/24",
-    "10.6.2.0/24",
-    "10.6.3.0/24",
-    "10.6.4.0/24",
-    "10.6.1.0/24"
-  ],
-  "firewall_allowed_ipaddresses": [
-    "52.158.42.90",
-    "13.79.120.39",
-    "52.155.248.41",
-    "13.91.47.76",
-    "40.85.190.91",
-    "52.187.75.218",
-    "52.174.163.213",
-    "52.237.203.198"
-  ],
-  "assign_subscription_permissions" : false
+   "assign_subscription_permissions" : false
 }
