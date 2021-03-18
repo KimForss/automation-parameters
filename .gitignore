@@ -36,3 +36,4 @@ override.tf.json
 
 **/deployment.log
 **/log.txt
+DEPLOYMENT-ORCHESTRATION/clear.sh
