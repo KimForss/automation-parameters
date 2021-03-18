@@ -34,3 +34,5 @@ override.tf.json
 # example: *tfplan*
 
 
+**/deployment.log
+**/log.txt

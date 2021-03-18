@@ -1,13 +1,13 @@
 {
   "infrastructure": {
     "region": "westeurope",
-    "environment": "DEV",
+    "environment": "SHRD",
     "resource_group": {
       "name" : "WEEU-SAP_LIBRARY"
     }
   },
   "deployer": {
-    "environment": "DEV",
+    "environment": "SHRD",
     "region": "westeurope",
     "vnet": "MGMT00"
   }
