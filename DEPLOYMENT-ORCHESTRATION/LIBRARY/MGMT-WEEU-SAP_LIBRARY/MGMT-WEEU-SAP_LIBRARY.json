@@ -1,0 +1,19 @@
+{
+  "infrastructure": {
+    "region": "westeurope",
+    "environment": "MGMT",
+    "resource_group": {
+      "name" : "MGMT-SAP_LIBRARY"
+    }
+  },
+  "deployer": {
+    "environment": "MGMT",
+    "region": "westeurope",
+    "vnet": "MGMT00"
+  },
+  "key_vault": {
+    "kv_user_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/MGMTWEEUDEP00user0EB",
+    "kv_prvt_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/MGMTWEEUDEP00prvt0EB",
+    "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/MGMTWEEUDEP00user0EB"
+  }
+}
