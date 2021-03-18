@@ -1,0 +1,73 @@
+Deploying the: sap_system
+2021-03-15 00.43
+terraform  init -upgrade=true -force-copy -backend-config "subscription_id=8d8422a3-a9c1-4fe9-b880-adcf61557c71" -backend-config "resource_group_name=WEEU-SAP_LIBRARY" -backend-config "storage_account_name=devweeutfstate530" -backend-config "container_name=tfstate" -backend-config "key=DEV-WEEU-SAP01-ZZZ.terraform.tfstate" C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 08.32
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 08.45
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 08.51
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 09.07
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 09.34
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 09.36
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 18.09
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 18.49
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 18.50
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 18.52
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-15 18.57
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstate530" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-18 15.59
+terraform  init -upgrade=true -force-copy -backend-config "subscription_id=8d8422a3-a9c1-4fe9-b880-adcf61557c71" -backend-config "resource_group_name=WEEU-SAP_LIBRARY" -backend-config "storage_account_name=devweeutfstated30" -backend-config "container_name=tfstate" -backend-config "key=DEV-WEEU-SAP01-ZZZ.terraform.tfstate" C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-18 16.43
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+terraform  apply -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Deploying the: sap_system
+2021-03-18 17.38
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system
+Removing the: sap_system
+2021-03-18 17.39
+terraform  destroy -var-file .\DEV-WEEU-SAP01-ZZZ.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var landscape_tfstate_key=DEV-WEEU-SAP01-INFRASTRUCTURE.terraform.tfstate -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_system

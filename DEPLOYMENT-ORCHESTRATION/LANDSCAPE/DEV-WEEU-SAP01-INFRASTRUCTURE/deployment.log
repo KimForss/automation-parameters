@@ -1,0 +1,12 @@
+Removing the: sap_landscape
+2021-03-17 21.21
+terraform  destroy -var-file .\DEV-WEEU-SAP01-INFRASTRUCTURE.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_landscape
+Removing the: sap_landscape
+2021-03-17 21.55
+terraform  destroy -var-file .\DEV-WEEU-SAP01-INFRASTRUCTURE.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_landscape
+Removing the: sap_landscape
+2021-03-17 21.56
+terraform  destroy -var-file .\DEV-WEEU-SAP01-INFRASTRUCTURE.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_landscape
+Removing the: sap_landscape
+2021-03-17 22.06
+terraform  destroy -var-file .\DEV-WEEU-SAP01-INFRASTRUCTURE.json -var tfstate_resource_id="/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/WEEU-SAP_LIBRARY/providers/Microsoft.Storage/storageAccounts/devweeutfstated30" -var deployer_tfstate_key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate C:\Work\Repos\sap-hana\deploy\terraform\run\sap_landscape

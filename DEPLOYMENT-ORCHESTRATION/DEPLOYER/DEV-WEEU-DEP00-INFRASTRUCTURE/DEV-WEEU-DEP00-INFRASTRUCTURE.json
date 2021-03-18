@@ -20,5 +20,12 @@
   "options": {
     "enable_deployer_public_ip": true
   },
-  "firewall_deployment": true
+  "firewall_deployment": true,
+  "deployers": [
+    {
+      "size": "Standard_D4ds_v4",
+      "disk_type": "Premium_LRS",
+      "use_DHCP": true
+    }
+  ]
 }

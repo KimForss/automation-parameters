@@ -1,0 +1,63 @@
+Bootstrap the library
+2021-03-14 15.53
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 16.07
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 21.18
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 21.24
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 21.37
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 22.34
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 23.02
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 23.25
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 23.31
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 23.34
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-14 23.43
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-15 00.20
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-17 12.53
+terraform  init -upgrade=true C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+Bootstrap the library
+2021-03-17 13.10
+terraform  init -upgrade=true -reconfigure C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  plan -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library
+terraform  apply -var-file DEV-WEEU-SAP_LIBRARY.json -var deployer_statefile_foldername=..\..\DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE C:\Work\Repos\sap-hana\deploy\terraform\bootstrap\sap_library

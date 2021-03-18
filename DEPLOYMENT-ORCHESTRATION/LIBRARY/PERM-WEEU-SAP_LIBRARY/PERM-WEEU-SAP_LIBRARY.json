@@ -1,0 +1,11 @@
+{
+  "infrastructure": {
+    "region": "westeurope",
+    "environment": "PERM"
+  },
+  "deployer": {
+    "environment": "PERM",
+    "region": "westeurope",
+    "vnet": "DEP02"
+  }
+}

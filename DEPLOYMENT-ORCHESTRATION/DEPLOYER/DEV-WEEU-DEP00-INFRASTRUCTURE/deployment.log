@@ -1,0 +1,38 @@
+Deploying the: sap_deployer
+2021-03-14 23.26
+terraform  init -upgrade=true -force-copy -backend-config "subscription_id=8d8422a3-a9c1-4fe9-b880-adcf61557c71" -backend-config "resource_group_name=WEEU-SAP_LIBRARY" -backend-config "storage_account_name=devweeutfstate073" -backend-config "container_name=tfstate" -backend-config "key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate" C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+terraform  plan -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+Deploying the: sap_deployer
+2021-03-14 23.32
+terraform  init -upgrade=true
+terraform  plan -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+Deploying the: sap_deployer
+2021-03-14 23.34
+terraform  init -upgrade=true
+terraform  plan -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+Deploying the: sap_deployer
+2021-03-14 23.44
+Deploying the: sap_deployer
+2021-03-15 00.25
+terraform  init -upgrade=true -force-copy -backend-config "subscription_id=8d8422a3-a9c1-4fe9-b880-adcf61557c71" -backend-config "resource_group_name=WEEU-SAP_LIBRARY" -backend-config "storage_account_name=devweeutfstate530" -backend-config "container_name=tfstate" -backend-config "key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate" C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+terraform  plan -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+Deploying the: sap_deployer
+2021-03-17 12.58
+terraform  init -upgrade=true -force-copy -backend-config "subscription_id=8d8422a3-a9c1-4fe9-b880-adcf61557c71" -backend-config "resource_group_name=WEEU-SAP_LIBRARY" -backend-config "storage_account_name=devweeutfstated30" -backend-config "container_name=tfstate" -backend-config "key=DEV-WEEU-DEP00-INFRASTRUCTURE.terraform.tfstate" C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+terraform  plan -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+terraform  apply -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+Deploying the: sap_deployer
+2021-03-17 13.35
+terraform  init -upgrade=true
+terraform  plan -var-file DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+Deploying the: sap_deployer
+2021-03-17 17.57
+Deploying the: sap_deployer
+2021-03-17 18.10
+Deploying the: sap_deployer
+2021-03-17 18.46
+Deploying the: sap_deployer
+2021-03-17 18.47
+terraform  init -upgrade=true
+terraform  plan -var-file .\DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer
+terraform  apply -var-file .\DEV-WEEU-DEP00-INFRASTRUCTURE.json C:\Work\Repos\sap-hana\deploy\terraform\run\sap_deployer

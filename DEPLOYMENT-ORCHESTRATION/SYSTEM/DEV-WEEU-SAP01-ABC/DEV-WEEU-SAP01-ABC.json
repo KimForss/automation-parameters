@@ -1,6 +1,6 @@
 {
   "application": {
-    "application_server_count": 2,
+    "application_server_count": 1,
     "enable_deployment": true,
     "ers_instance_number": "02",
     "os": {
@@ -10,26 +10,17 @@
       "sku": "gen2",
       "version": "latest"
     },
-    "scs_high_availability": false,
+    "scs_high_availability": true,
     "scs_server_count": 1,
     "scs_instance_number": "01",
-    "sid": "ZZZ",
+    "sid": "ABC",
     "webdispatcher_count": 1,
     "dual_nics": false,
     "use_DHCP": true,
-    "app_sku": "Standard_E4s_v3",
-    "scs_sku": "Standard_E4s_v3",
-    "web_sku": "Standard_E4s_v3",
-    "app_zones": [
-      "2"
-    ],
-    "scs_zones": [
-      "2"
-    ],
-    "web_zones": [
-      "2"
-    ]
-
+    "app_sku" : "Standard_E4ds_v4",
+    "scs_sku" : "Standard_E4ds_v4",
+    "web_sku" : "Standard_E4ds_v4"
+    
   },
   "databases": [
     {
@@ -41,11 +32,8 @@
         "version": "latest"
       },
       "platform": "HANA",
-      "size": "Default",
+      "size": "M32ts",
       "use_DHCP": true,
-      "zones": [
-        "2"
-      ],
       "dbnodes": [
         {}
       ]
@@ -58,16 +46,16 @@
       "sap": {
         "name": "SAP01",
         "subnet_admin": {
-          "prefix": "10.110.0.0/27"
+          "prefix": "10.110.0.224/27"
         },
         "subnet_app": {
-          "prefix": "10.110.0.32/27"
+          "prefix": "10.110.0.128/27"
         },
         "subnet_db": {
-          "prefix": "10.110.0.64/27"
+          "prefix": "10.110.0.160/27"
         },
         "subnet_web": {
-          "prefix": "10.110.0.96/27"
+          "prefix": "10.110.0.192/27"
         }
       }
     }
