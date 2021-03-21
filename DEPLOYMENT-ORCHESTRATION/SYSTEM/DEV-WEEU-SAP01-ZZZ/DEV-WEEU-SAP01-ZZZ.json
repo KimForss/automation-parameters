@@ -73,6 +73,7 @@
     }
   },
   "options": {
-    "resource_offset": 1
+    "resource_offset": 1,
+    "nsg_asg_with_vnet": true
   }
 }

@@ -1,37 +1,27 @@
 {
   "application": {
-
-    "application_server_count": 3,
+    "application_server_count": 1,
     "enable_deployment": true,
     "ers_instance_number": "02",
     "os": {
-      "offer": "sles-sap-12-sp5",
       "publisher": "SUSE",
+      "offer": "sles-sap-12-sp5",
       "sku": "gen1",
       "version": "latest"
     },
     "scs_os": {
-      "offer": "sles-sap-15-sp1",
-      "publisher": "SUSE",
-      "sku": "gen1",
+      "offer": "windowsserver",
+      "publisher": "MicrosoftWindowsServer",
+      "sku": "2016-Datacenter-smalldisk",
       "version": "latest"
     },
     "scs_high_availability": true,
     "scs_server_count": 1,
     "scs_instance_number": "01",
-    "sid": "ABC",
-    "webdispatcher_count": 1,
+    "sid": "WIN",
+    "webdispatcher_count": 0,
     "dual_nics": false,
     "use_DHCP": true,
-    "app_tags": {
-      "hello": "app world"
-    },
-    "scs_tags": {
-      "hello": "scs world"
-    },
-    "web_tags": {
-      "hello": "web world"
-    },
     "authentication": {
       "type": "password"
     },
@@ -51,19 +41,18 @@
     {
       "high_availability": false,
       "os": {
-        "offer": "sles-sap-12-sp5",
-        "publisher": "SUSE",
-        "sku": "gen1",
+        "publisher": "MicrosoftSQLServer",
+        "offer": "SQL2017-WS2016",
+        "sku": "Standard",
         "version": "latest"
       },
-      "platform": "HANA",
-      "size": "Demo",
+      "platform": "SQLSERVER",
+      "size": "1024",
       "dual_nics": false,
       "use_DHCP": true,
       "authentication": {
         "type": "password"
       },
-      "zones" : ["1","2"],
       "dbnodes": [
         {},
         {}
@@ -74,11 +63,11 @@
     "environment": "PROTO",
     "region": "northeurope",
     "resource_group": {
-      "name" :"PROTO-NOEU-SAPPROT-ABC",
       "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROT-ABC"
     },
     "disk_encryption_set_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.Compute/diskEncryptionSets/PROTO-NOEU-KEY_SET",
     "vnets": {
+      "management": {},
       "sap": {
         "name": "SAPPROTO",
         "subnet_admin": {

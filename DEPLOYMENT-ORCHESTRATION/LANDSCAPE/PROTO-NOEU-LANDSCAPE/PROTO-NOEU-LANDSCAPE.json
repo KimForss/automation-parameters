@@ -10,6 +10,7 @@
         "region": "northeurope",
         "vnets": {
             "sap": {
+                "name": "SAPPROTO",
                 "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROTO-INFRASTRUCTURE/providers/Microsoft.Network/virtualNetworks/PROTO-NOEU-SAPPROTO-vnet"
             }
         }
