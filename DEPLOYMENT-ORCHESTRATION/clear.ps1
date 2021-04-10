@@ -99,12 +99,17 @@ $dirname = "LANDSCAPE\DEV-WEEU-SAP01-INFRASTRUCTURE\"
 
 Remove-Items -rgName $rgname -dirname $dirname
 
-$rgname = "WEEU-DEP00-INFRASTRUCTURE"
-$dirname = "DEPLOYER\DEV-WEEU-DEP00-INFRASTRUCTURE\"
+$rgname = "WEEU-MGMT-INFRASTRUCTURE"
+$dirname = "DEPLOYER\WEEU-MGMT-INFRASTRUCTURE\"
 Remove-Items -rgName $rgname -dirname $dirname
 
-$rgname = "WEEU-SAP_LIBRARY"
-$dirname = "LIBRARY\DEV-WEEU-SAP_LIBRARY\"
+$rgname = "WEEU-MGMT-SAP_LIBRARY"
+$dirname = "LIBRARY\MGMT-WEEU-SAP_LIBRARY\"
 Remove-Items -rgName $rgname -dirname $dirname
+
+$rgname = "NOEU-MGMT-SAP_LIBRARY"
+$dirname = "LIBRARY\MGMT-NOEU-SAP_LIBRARY\"
+Remove-Items -rgName $rgname -dirname $dirname
+
 
 Get-Module

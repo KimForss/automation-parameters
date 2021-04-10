@@ -13,7 +13,7 @@
     "scs_high_availability": false,
     "scs_server_count": 1,
     "scs_instance_number": "01",
-    "sid": "ZZZ",
+    "sid": "X00",
     "webdispatcher_count": 1,
     "dual_nics": false,
     "use_DHCP": true,
@@ -56,19 +56,7 @@
     "region": "westeurope",
     "vnets": {
       "sap": {
-        "name": "SAP01",
-        "subnet_admin": {
-          "prefix": "10.110.0.0/27"
-        },
-        "subnet_app": {
-          "prefix": "10.110.0.32/27"
-        },
-        "subnet_db": {
-          "prefix": "10.110.0.64/27"
-        },
-        "subnet_web": {
-          "prefix": "10.110.0.96/27"
-        }
+        "name": "SAP01"
       }
     }
   },

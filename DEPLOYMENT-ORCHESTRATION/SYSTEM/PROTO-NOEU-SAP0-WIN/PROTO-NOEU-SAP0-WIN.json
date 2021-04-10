@@ -1,11 +1,11 @@
 {
   "application": {
-    "application_server_count": 1,
+    "application_server_count": 0,
     "enable_deployment": true,
     "ers_instance_number": "02",
     "os": {
-      "publisher": "SUSE",
       "offer": "sles-sap-12-sp5",
+      "publisher": "SUSE",
       "sku": "gen1",
       "version": "latest"
     },
@@ -22,9 +22,6 @@
     "webdispatcher_count": 0,
     "dual_nics": false,
     "use_DHCP": true,
-    "authentication": {
-      "type": "password"
-    },
     "app_zones": [
       "2",
       "1",
@@ -54,7 +51,6 @@
         "type": "password"
       },
       "dbnodes": [
-        {},
         {}
       ]
     }
@@ -62,12 +58,8 @@
   "infrastructure": {
     "environment": "PROTO",
     "region": "northeurope",
-    "resource_group": {
-      "arm_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-SAPPROT-ABC"
-    },
     "disk_encryption_set_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.Compute/diskEncryptionSets/PROTO-NOEU-KEY_SET",
     "vnets": {
-      "management": {},
       "sap": {
         "name": "SAPPROTO",
         "subnet_admin": {
@@ -97,7 +89,9 @@
       }
     }
   },
-  "options": {},
+  "options": {
+    "use_SPN": ""
+  },
   "key_vault": {
     "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
   }

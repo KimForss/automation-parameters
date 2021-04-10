@@ -57,7 +57,7 @@
         "version": "latest"
       },
       "platform": "HANA",
-      "size": "Demo",
+      "size": "1024",
       "dual_nics": false,
       "use_DHCP": true,
       "authentication": {
@@ -108,7 +108,9 @@
       }
     }
   },
-  "options": {},
+  "options": {
+    "use_SPN" : ""
+  },
   "key_vault": {
     "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
   }

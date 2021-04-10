@@ -7,8 +7,20 @@
         "region": "westeurope",
         "vnets": {
             "sap": {
-                "name" :"SAP01",
-                "address_space": "10.110.0.0/24"
+                "name": "SAP01",
+                "address_space": "10.110.0.0/22",
+                "subnet_admin": {
+                    "prefix": "10.110.0.0/25"
+                },
+                "subnet_app": {
+                    "prefix": "10.110.1.0/24"
+                },
+                "subnet_db": {
+                    "prefix": "10.110.2.0/24"
+                },
+                "subnet_web": {
+                    "prefix": "10.110.3.0/24"
+                }
             }
         }
     },
