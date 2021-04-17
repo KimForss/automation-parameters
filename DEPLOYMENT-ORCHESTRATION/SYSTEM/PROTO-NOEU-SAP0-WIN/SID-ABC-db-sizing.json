@@ -1,0 +1,48 @@
+{
+  "1024": {
+    "compute": {
+      "vm_size": "Standard_E16s_v3",
+      "swap_size_gb": 2
+    },
+    "storage": [
+      {
+        "name": "os",
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 128,
+        "caching": "ReadWrite"
+      },
+      {
+        "name": "data",
+        "count": 2,
+        "disk_type": "Premium_LRS",
+        "size_gb": 512,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/data",
+        "lun_start": 0
+      },
+      {
+        "name": "log",
+        "count": 2,
+        "disk_type": "Premium_LRS",
+        "size_gb": 256,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/data",
+        "lun_start": 9
+      },
+      {
+        "name": "data",
+        "growth" : true,
+        "count": 1,
+        "disk_type": "Premium_LRS",
+        "size_gb": 512,
+        "caching": "None",
+        "write_accelerator": false,
+        "mount_point": "/data",
+        "lun_start": 2
+      }
+    ]
+  }
+}
