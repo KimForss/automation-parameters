@@ -28,6 +28,5 @@
         "nospn" : true
     },
     "key_vault" :{
-        "kv_spn_id":""
     }
 }
