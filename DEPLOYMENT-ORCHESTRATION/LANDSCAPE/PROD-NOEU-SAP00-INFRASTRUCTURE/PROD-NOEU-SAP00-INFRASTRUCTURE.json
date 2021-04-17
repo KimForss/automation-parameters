@@ -3,31 +3,25 @@
         "username": "azureadm"
     },
     "infrastructure": {
-        "environment": "DEV",
+        "environment": "PROD",
         "region": "westeurope",
         "vnets": {
             "sap": {
                 "name": "SAP01",
-                "address_space": "10.110.0.0/22",
+                "address_space": "10.111.0.0/22",
                 "subnet_admin": {
-                    "prefix": "10.110.0.0/25"
+                    "prefix": "10.111.0.0/25"
                 },
                 "subnet_app": {
-                    "prefix": "10.110.1.0/24"
+                    "prefix": "10.111.1.0/24"
                 },
                 "subnet_db": {
-                    "prefix": "10.110.2.0/24"
+                    "prefix": "10.111.2.0/24"
                 },
                 "subnet_web": {
-                    "prefix": "10.110.3.0/24"
+                    "prefix": "10.111.3.0/24"
                 }
             }
         }
-    },
-    "options": {
-        "nospn" : true
-    },
-    "key_vault" :{
-        "kv_spn_id":""
     }
 }

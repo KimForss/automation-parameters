@@ -17,9 +17,9 @@
     "webdispatcher_count": 1,
     "dual_nics": false,
     "use_DHCP": true,
-    "app_sku" : "Standard_E4ds_v4",
-    "scs_sku" : "Standard_E4ds_v4",
-    "web_sku" : "Standard_E4ds_v4"
+    "app_sku" : "Standard_D4s_v3",
+    "scs_sku" : "Standard_D4s_v3",
+    "web_sku" : "Standard_D4s_v3"
     
   },
   "databases": [
@@ -49,6 +49,7 @@
     }
   },
   "options": {
-    "resource_offset": 1
+    "resource_offset": 1,
+    "nospn" : true
   }
 }
