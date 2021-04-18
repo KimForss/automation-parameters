@@ -19,7 +19,8 @@
         "disk_type": "Premium_LRS",
         "size_gb": 128,
         "caching": "ReadOnly",
-        "write_accelerator": false
+        "write_accelerator": false,
+        "lun_start":0
       },
       {
         "name": "OracleArchive",
@@ -27,7 +28,8 @@
         "disk_type": "Premium_LRS",
         "size_gb": 128,
         "caching": "None",
-        "write_accelerator": false
+        "write_accelerator": false,
+        "lun_start":4
       },
       {
         "name": "OracleOrigLog",
@@ -35,7 +37,8 @@
         "disk_type": "Premium_LRS",
         "size_gb": 64,
         "caching": "None",
-        "write_accelerator": false
+        "write_accelerator": false,
+        "lun_start":6
       },
       {
         "name": "OracleMirrLog",
@@ -43,7 +46,8 @@
         "disk_type": "Premium_LRS",
         "size_gb": 64,
         "caching": "None",
-        "write_accelerator": false
+        "write_accelerator": false,
+        "lun_start":8
       }
     ]
   }

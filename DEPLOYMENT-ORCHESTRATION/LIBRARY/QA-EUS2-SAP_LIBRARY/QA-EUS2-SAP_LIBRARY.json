@@ -1,0 +1,15 @@
+{
+  "infrastructure": {
+    "region": "eastus2",
+    "environment": "QA"
+  },
+  "deployer": {
+    "environment": "QA",
+    "region": "eastus2",
+    "vnet": "MGMT",
+    "use": false
+  },
+  "key_vault": {
+    "kv_spn_id": "/subscriptions/8d8422a3-a9c1-4fe9-b880-adcf61557c71/resourceGroups/PROTO-NOEU-MGMT-INFRASTRUCTURE/providers/Microsoft.KeyVault/vaults/PROTONOEUMGMTuser05E"
+  }
+}

@@ -1,0 +1,5 @@
+key                     = "QA-EUS2-SAP03-DEF.terraform.tfstate"
+resource_group_name     = "QA-EUS2-SAP_LIBRARY"
+storage_account_name    = "qaeus2tfstate2c3"
+container_name          = "tfstate"
+subscription_id         = "80d5ed43-1465-432b-8914-5e1f68d49330"
