@@ -52,18 +52,10 @@
   ],
   "infrastructure": {
     "environment": "PROD",
-    "region": "westeurope",
+    "region": "northeurope",
     "vnets": {
       "sap": {
-        "subnet_admin": {
-          "prefix": "<arm_id>"
-        },
-        "subnet_app": {
-          "prefix": "<arm_id>"
-        },
-        "subnet_db": {
-          "prefix": "<arm_id>"
-        }
+        "name": "SAP-01"
       }
     }
   },
