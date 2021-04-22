@@ -8,7 +8,7 @@
         "vnets": {
             "sap": {
                 "name": "SAP01",
-                "address_space": "10.110.0.0/22",
+                "address_space": "10.110.0.0/24",
                 "subnet_admin": {
                     "prefix": "10.110.0.0/25"
                 },
@@ -25,7 +25,7 @@
         }
     },
     "options": {
-        "nospn" : true
+        
     },
     "key_vault" :{
     }
