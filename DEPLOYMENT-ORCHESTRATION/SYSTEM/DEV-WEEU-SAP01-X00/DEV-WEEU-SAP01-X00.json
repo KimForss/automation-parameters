@@ -17,9 +17,9 @@
     "webdispatcher_count": 1,
     "dual_nics": false,
     "use_DHCP": true,
-    "app_sku": "Standard_E4s_v3",
-    "scs_sku": "Standard_E4s_v3",
-    "web_sku": "Standard_E4s_v3",
+    "app_sku": "Standard_D4s_v3",
+    "scs_sku": "Standard_D4s_v3",
+    "web_sku": "Standard_D4s_v3",
     "app_zones": [
       "2"
     ],
@@ -41,7 +41,7 @@
         "version": "latest"
       },
       "platform": "HANA",
-      "size": "Default",
+      "size": "Demo",
       "use_DHCP": true,
       "zones": [
         "2"
