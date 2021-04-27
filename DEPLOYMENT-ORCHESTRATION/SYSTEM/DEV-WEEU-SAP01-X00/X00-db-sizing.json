@@ -94,7 +94,7 @@
         },
         {
           "name": "data",
-          "count": 4,
+          "count": 3,
           "disk_type": "Premium_LRS",
           "size_gb": 64,
           "caching": "None",
@@ -104,11 +104,11 @@
         },
         {
           "name": "log",
-          "count": 3,
+          "count": 1,
           "disk_type": "Premium_LRS",
           "size_gb": 128,
           "caching": "None",
-          "write_accelerator": true,
+          "write_accelerator": false,
           "mount_point": "/hana/log",
           "lun_start": 9
         },
@@ -116,7 +116,7 @@
           "name": "shared",
           "count": 1,
           "disk_type": "Premium_LRS",
-          "size_gb": 512,
+          "size_gb": 128,
           "caching": "ReadOnly",
           "write_accelerator": false,
           "mount_point": "/hana/shared",
