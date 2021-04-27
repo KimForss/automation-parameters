@@ -1,67 +1,48 @@
 {
   "application": {
-    "application_server_count": 2,
-    "enable_deployment": true,
-    "ers_instance_number": "02",
+    "application_server_count"      : 2,
+    "enable_deployment"             : true,
+    "ers_instance_number"           : "02",
     "os": {
-      "os_type": "Linux",
-      "offer": "sles-sap-12-sp5",
-      "publisher": "SUSE",
-      "sku": "gen2",
-      "version": "latest"
+      "os_type"                     : "Linux",
+      "offer"                       : "sles-sap-12-sp5",
+      "publisher"                   : "SUSE",
+      "sku"                         : "gen2",
+      "version"                     : "latest"
     },
-    "scs_high_availability": false,
-    "scs_server_count": 1,
-    "scs_instance_number": "01",
-    "sid": "X00",
-    "webdispatcher_count": 1,
-    "dual_nics": false,
-    "use_DHCP": true,
-    "app_sku": "Standard_D4s_v3",
-    "scs_sku": "Standard_D4s_v3",
-    "web_sku": "Standard_D4s_v3",
-    "app_zones": [
-      "2"
-    ],
-    "scs_zones": [
-      "2"
-    ],
-    "web_zones": [
-      "2"
-    ]
-
+    "scs_high_availability"         : true,
+    "scs_server_count"              : 1,
+    "scs_instance_number"           : "01",
+    "sid"                           : "X00",
+    "webdispatcher_count"           : 1,
+    "dual_nics"                     : false,
+    "use_DHCP"                      : true
   },
   "databases": [
     {
-      "high_availability": false,
+      "high_availability"           : false,
       "os": {
-        "offer": "sles-sap-12-sp5",
-        "publisher": "SUSE",
-        "sku": "gen2",
-        "version": "latest"
+        "offer"                     : "sles-sap-12-sp5",
+        "publisher"                 : "SUSE",
+        "sku"                       : "gen2",
+        "version"                   : "latest"
       },
-      "platform": "HANA",
-      "size": "Demo",
-      "use_DHCP": true,
-      "zones": [
-        "2"
-      ],
-      "dbnodes": [
-        {}
-      ]
+      "platform"                    : "HANA",
+      "size"                        : "Default",
+      "use_DHCP"                    : true,
+      "dbnodes"                     : [ {} ]
     }
   ],
   "infrastructure": {
-    "environment": "DEV",
-    "region": "westeurope",
+    "environment"                   : "DEV",
+    "region"                        : "westeurope",
     "vnets": {
       "sap": {
-        "name": "SAP01"
+        "name"                      : "SAP01"
       }
     }
   },
   "options": {
-    "resource_offset": 1,
-    "nsg_asg_with_vnet": true
+    "resource_offset"               : 1
   }
 }

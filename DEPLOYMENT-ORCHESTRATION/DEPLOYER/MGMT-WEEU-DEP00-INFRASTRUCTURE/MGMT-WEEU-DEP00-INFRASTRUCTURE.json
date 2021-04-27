@@ -1,31 +1,21 @@
 {
   "infrastructure": {
-    "region": "westeurope",
-    "environment": "MGMT",
+    "region"                     : "westeurope",
+    "environment"                : "MGMT",
     "vnets": {
       "management": {
-        "address_space": "10.10.20.0/25",
+        "address_space"          : "10.10.20.0/25",
         "subnet_mgmt": {
-          "prefix": "10.10.20.64/28"
+          "prefix"               : "10.10.20.64/28"
         },
         "subnet_fw": {
-          "prefix": "10.10.20.0/26"
+          "prefix"               : "10.10.20.0/26"
         }
       }
-    },
-    "resource_group": {
-      "name": "MGMT-WEEU-INFRASTRUCTURE"
     }
   },
   "options": {
-    "enable_deployer_public_ip": true
+    "enable_deployer_public_ip" : true
   },
-  "firewall_deployment": false,
-  "deployers": [
-    {
-      "size": "Standard_D4ds_v4",
-      "disk_type": "Premium_LRS",
-      "use_DHCP": true
-    }
-  ]
+  "firewall_deployment"         : true
 }
